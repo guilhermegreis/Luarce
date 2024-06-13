@@ -1,0 +1,405 @@
+header {
+    width: auto;
+    height: 138px;
+    background-color: white;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.Logo {
+    width: 190px;
+    height: 47.93px;
+    margin-top: 46px;
+    margin-left: 50px;
+}
+
+.OpcoesHeader {
+    margin-top: 65px;
+    gap: 125px;
+    padding-left: 390px;
+    font-family: 'Poppins', sans-serif;
+    color: #514E4E;
+    font-size: 18px;
+}
+
+.OpcoesHeader a:hover {
+    color:#C4C298;
+}
+
+
+.SimbolosHeader {
+    gap: 70px;
+    padding-left: 310px;
+}
+
+.Favoritos {
+    width: 47px;
+    height: 47px;
+    margin-top: 54px;
+}
+
+.Usuario {
+    width: 45px;
+    height: 45px;
+    margin-top: 56px;
+}
+
+.Carrinho {
+    width: 47px;
+    height: 47px;
+    margin-top: 55px;
+}
+
+.Carousel {
+    width: 100%;
+    height: 200px;
+}
+
+.onda {
+    width: 100%;
+    height: auto;
+    background-color: #F7F6EF;
+}
+
+footer {
+    background-color: #C4C298;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.Direitos {
+    color: #E7E7E7;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 41px;
+    margin-bottom: 0px;
+}
+
+.ConteudoFooter {
+    gap: 30px;
+    justify-content: center;
+}
+
+.OpcoesFooter {
+    gap: 100px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    padding-right: 30px;
+    
+}
+
+.vertical-line {
+    width: 1px;
+    height: 22px;
+    background-color: rgba(51, 51, 51, 0.2);
+}
+
+.SimbolosFooter {
+    padding-left: 32px;
+    padding-right: 50px;
+}
+
+.WhatsApp {
+    width: 21px;
+    height: 21px;
+    margin-left: 45px;
+}
+
+.Instagram {
+    width: 20px;
+    height: 20px;
+    margin-left: 45px;
+}
+
+.Tiktok {
+    width: 20px;
+    height: 22.42px;
+    margin-left: 45px;
+}
+
+.Email {
+    width: 20px;
+    height: 18.38px;
+    margin-right: 16px;
+}
+
+.Gmail {
+    padding-top: 4px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.LogoRedonda {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 55px;
+    
+}
+
+main {
+    background-color: #F7F6EF; 
+    width: 100%;
+    height: 1460px;
+    margin: 0 auto;
+}
+
+.header2 {
+    width: 100%;
+    color: white;
+    background-color: #C4C298;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: start;
+    height: 180px;
+    padding-left: 110px;
+}
+
+.header2 h1 {
+    font-family: 'Quicksand', 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 450;
+    padding-top: 41px;
+}
+
+.paginas {
+    display: flex;
+    justify-content: end;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 25px 99px 43px 0px;
+    gap: 13px;
+}
+
+.paginas p {
+    margin: 0;
+}
+
+.setaDireita2 {
+    font-weight: 600;
+}
+
+.pgAtual {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.pgAtual:hover {
+    color: #C4C298; 
+}
+
+.conteudo {
+    display: flex;
+    margin-left: 215px;
+    border: none;
+}
+
+.filtros {
+    margin: 0;
+    border: none;
+}
+
+.filtros h2 {
+    font-size: 31px;
+    margin-bottom: 70px;
+    color: rgba(85, 85, 85, 0.95);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+
+.filtros .opcao {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.filtros .opcao h5 {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.53);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.falso-btn {
+    color: rgba(0, 0, 0, 0.48);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 43px;
+    margin-left: 28px;
+
+}
+
+.falso-btn:hover {
+    color: #C4C298;
+}
+
+.filtros .opcao a:hover {
+    color: #C4C298;
+}
+
+.produtos {
+    margin-top: 20px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.product-item {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    margin-right: 65px;
+    margin-bottom: 49px;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.product-item .produto {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.65);
+    max-height: 30px;
+    margin-left: 39px;
+    margin-right: 39px;
+    padding-top: 14px;
+}
+
+.product-item .preco {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.67);
+    padding-top: 44px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+.product-item .pix {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    padding-top: 0px;
+    margin-top: 3px;
+    border-top: none;
+    margin-bottom: 6px;
+}
+
+.comprar-btn {
+    width: 100%;
+    background-color: #C4C298;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px;
+    border-radius: 0px 0px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover {
+    background-color: #666666;
+}
+
+/*-------------------------------------------------------- CSS que pertence ao GLOSSÁRIO: ------------------------------------------------------------------------*/
+
+#Glossario {
+    background-color: #F7F6EF; 
+    width: 100%;
+    height: 1600px;
+    margin: 0 auto;
+}
+
+.horizontal-line-container {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: 0;
+}
+
+.horizontal-line {
+    width: 77%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin: 0;
+}
+
+.explicacao {
+    font-weight: 600;
+    display: flex;
+    width: 80%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: none;
+    margin-left: 13%;
+}
+
+.explicacao h1 {
+    color: rgba(85, 85, 85, 0.95);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 20%;
+    justify-content: start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: none;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-right: 0px;
+
+}
+
+#tres {
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.explicacao p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    justify-content: start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: none;
+    width: 70%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-left: 32px;
+}

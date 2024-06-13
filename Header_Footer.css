@@ -1,5 +1,5 @@
 header {
-    width: auto;
+    width: 100%;
     height: 138px;
     background-color: white;
     margin: 0;
@@ -10,6 +10,11 @@ a {
     color: inherit; 
 }
 
+body {
+    background-color: #F7F6EF;
+    width: 100%;
+    margin: 0;
+}
 
 .Logo {
     width: 190px;
@@ -27,27 +32,31 @@ a {
     font-size: 18px;
 }
 
+.OpcoesHeader a:hover {
+    color:#C4C298;
+}
+
 .SimbolosHeader {
     gap: 70px;
-    padding-left: 327px;
+    padding-left: 310px;
 }
 
 .Favoritos {
-    width: 44px;
-    height: 44px;
-    margin-top: 56px;
+    width: 47px;
+    height: 47px;
+    margin-top: 54px;
 }
 
 .Usuario {
-    width: 42px;
-    height: 42px;
-    margin-top: 58px;
+    width: 45px;
+    height: 45px;
+    margin-top: 56px;
 }
 
 .Carrinho {
-    width: 44px;
-    height: 44px;
-    margin-top: 57px;
+    width: 47px;
+    height: 47px;
+    margin-top: 55px;
 }
 
 .Carousel {
@@ -145,9 +154,11 @@ footer {
     
 }
 
+/* AQUI PODE ALTERAR O "height" DO MAIN PARA COMPORTAR O CONTEUDO DA PÁGINA
+   429px é só o tamanho da tela no navegador FireFox, e 456px é o do Chrome 
+  (lembrando que isso é pra tela do computador, não sei se muda no de vocês) */
 main {
-    background-color: #F7F6EF; 
+    background-color: #F7F6EF;
     width: 100%;
-    height: 430px;
-    margin: 0;
+    height: 456px;
 }

@@ -1,0 +1,164 @@
+header {
+    width: 100%;
+    height: 138px;
+    background-color: white;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+body {
+    background-color: #F7F6EF;
+    width: 100%;
+    margin: 0;
+}
+
+.Logo {
+    width: 190px;
+    height: 47.93px;
+    margin-top: 46px;
+    margin-left: 50px;
+}
+
+.OpcoesHeader {
+    margin-top: 65px;
+    gap: 125px;
+    padding-left: 390px;
+    font-family: 'Poppins', sans-serif;
+    color: #514E4E;
+    font-size: 18px;
+}
+
+.OpcoesHeader a:hover {
+    color:#C4C298;
+}
+
+.SimbolosHeader {
+    gap: 70px;
+    padding-left: 310px;
+}
+
+.Favoritos {
+    width: 47px;
+    height: 47px;
+    margin-top: 54px;
+}
+
+.Usuario {
+    width: 45px;
+    height: 45px;
+    margin-top: 56px;
+}
+
+.Carrinho {
+    width: 47px;
+    height: 47px;
+    margin-top: 55px;
+}
+
+.Carousel {
+    width: 100%;
+    height: 200px;
+}
+
+.onda {
+    width: 100%;
+    height: auto;
+    background-color: #F7F6EF;
+}
+
+footer {
+    background-color: #C4C298;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.Direitos {
+    color: #E7E7E7;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 41px;
+    margin-bottom: 0px;
+}
+
+.ConteudoFooter {
+    gap: 30px;
+    justify-content: center;
+}
+
+.OpcoesFooter {
+    gap: 100px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    padding-right: 30px;
+    
+}
+
+.vertical-line {
+    width: 1px;
+    height: 22px;
+    background-color: rgba(51, 51, 51, 0.2);
+}
+
+.SimbolosFooter {
+    padding-left: 32px;
+    padding-right: 50px;
+}
+
+.WhatsApp {
+    width: 21px;
+    height: 21px;
+    margin-left: 45px;
+}
+
+.Instagram {
+    width: 20px;
+    height: 20px;
+    margin-left: 45px;
+}
+
+.Tiktok {
+    width: 20px;
+    height: 22.42px;
+    margin-left: 45px;
+}
+
+.Email {
+    width: 20px;
+    height: 18.38px;
+    margin-right: 16px;
+}
+
+.Gmail {
+    padding-top: 4px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.LogoRedonda {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 55px;
+    
+}
+
+/* AQUI PODE ALTERAR O "height" DO MAIN PARA COMPORTAR O CONTEUDO DA PÁGINA
+   429px é só o tamanho da tela no navegador FireFox, e 456px é o do Chrome 
+  (lembrando que isso é pra tela do computador, não sei se muda no de vocês) */
+main {
+    background-color: #F7F6EF;
+    width: 100%;
+    height: 456px;
+}
