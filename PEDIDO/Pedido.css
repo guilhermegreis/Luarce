@@ -1,9 +1,248 @@
-header {
+.headerPedido {
     width: 100%;
     height: 138px;
     background-color: white;
     margin: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.infoPessoaish1 {
+    display: flex;
+    margin: 45px 0px 17px 137px;
+}
+
+.dNumeroUm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555555;
+}
+
+.numeroUm {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0
+}
+
+.infoUm {
+    color: #555555;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.formPersonalData {
+    background-color: #E2E1CC;
+    width: 25%;
+    margin-left: 137px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formPersonalData label {
+    color: #777777;
+    font-family: 'Inter';
+}
+
+.formPersonalData input {
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.infoEntregash1 {
+    display: flex;
+    margin: 45px 0px 17px 137px;
+}
+
+.dNumeroDois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555555;
+}
+
+.numeroDois {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0
+}
+
+.infoDois {
+    color: #555555;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.formAddressData {
+    background-color: #E2E1CC;
+    width: 25%;
+    margin-left: 137px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formAddressData label {
+    color: #777777;
+    font-family: 'Inter';
+}
+
+.formAddressData input {
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+} 
+
+.formAddressData select {
+    color: #777777;
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+} 
+
+.infoPessoaish1 {
+    display: flex;
+    margin: 45px 0px 17px 137px;
+}
+
+.dNumeroUm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555555;
+}
+
+.numeroUm {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0
+}
+
+.paymentMethodsh1 {
+    display: flex;
+    margin: 45px 0px 17px 137px;
+}
+
+.dNumberThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555555;
+}
+
+.numberThree {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0
+}
+
+.paymentTitle {
+    color: #555555;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.paymentButtons {
+    background-color: #E2E1CC;
+    width: 25%;
+    margin-left: 137px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.paymentButtons label {
+    color: #777777;
+    font-family: 'Inter';
+}
+
+.paymentButtons input {
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.pix, .debit, .credit, .paymentSlip {
+    display: flex;
+    justify-content: center;
+}
+
+.pix button, .debit button, .credit button, .paymentSlip button {
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Poppins';
+    font-weight: medium;
+    font-size: 20px;
+    color: #514E4E;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    background-color: #F7F7EF;
+}
+
+.pix button:hover, .debit button:hover , .credit button:hover , .paymentSlip button:hover {
+    background-color: #aaaaa0;
+    transition: ease 0.5s;
+}
+
+.pixPercent {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-size: 15px;
+    color: #514E4E;
+}
+
 
 a {
     text-decoration: none;
@@ -160,5 +399,5 @@ footer {
 main {
     background-color: #F7F6EF;
     width: 100%;
-    height: 456px;
+    height: 100%;
 }

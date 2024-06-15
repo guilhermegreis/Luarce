@@ -31,7 +31,7 @@
     <link rel="icon" href="/Imagens/FAVICON/FAVICON128X128.ico" sizes="128x128" type="image/x-ico">
     <link rel="icon" href="/Imagens/FAVICON/FAVICON256X256.ico" sizes="256x256" type="image/x-ico">
     <!-- Link do .CSS da página -->
-    <link rel="stylesheet" href="Header_Footer.css">
+    <link rel="stylesheet" href="Pedido.css">
     <!-- Preload das imagens utilizadas na página -->
     <link rel="preload" href="/imagens/Logo.svg" as="image">
     <link rel="preload" href="/imagens/Favoritos.svg" as="image">
@@ -55,7 +55,7 @@
 <body>
 
 	<!-- HEADER -->
-    <header class="d-flex hide" >
+    <header class="headerPedido">
 
         <!-- Logo Principal -->
         <a href="/HOME/Home.html"><img class="Logo" src="/imagens/Logo.svg" alt=""></a>
@@ -87,6 +87,129 @@
                   <!-- Colocar uma pequena mensagem abaixo do campo onde o usuário digita o cupom escrita "Cupom inválido ou expirado." (coloquei lá no figma, mas ela só deve aparecer quando o usuário de fato colocar um voucher inválido) -->
                      <!-- Se o cupom validar, será aplicado 10% ao valor dos produtos não contando frete e se a pessoa pagar por pix também pode juntar e fazer 20% -->
                         <!-- E se o cupom validar também exiba uma mensagem no mesmo lugar de onde apareceria a de cupom inválido, na mesma fonte e tudo, escrito "Cupom válido! Seu desconto já foi inserido." -->
+
+        <div class="bodyPedido">
+            <div class="containerPedido">
+                <div class="infoPessoais">
+                    <div class="infoPessoaish1">
+                        <div class="dNumeroUm">
+                            <h1 class="numeroUm">1</h1>
+                        </div>
+                        <h1 class="infoUm">Informações Pessoais</h1>
+                    </div>
+                    <form action="" method="get">
+                        <div class="formPersonalData">
+                            <div>
+                                <label for="name">Nome Completo</label> <br>
+                                <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
+                            </div>
+                            <br>
+                            <div>
+                                <label for="name">CPF</label><br>
+                                <input type="text" name="name" id="name" placeholder="XXX.XXX.XXX-XX." required />
+                            </div>
+                            <br>
+                            <div>
+                                <label for="name">Data de Nascimento</label><br>
+                                <input type="text" name="name" id="name" placeholder="XX/XX/XXXX" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="infoEntrega">
+                    <div class="infoEntregash1">
+                        <div class="dNumeroDois">
+                            <h1 class="numeroDois">2</h1>
+                        </div>
+                        <h1 class="infoDois">Informações Pessoais</h1>
+                    </div>
+                    <form action="" method="get">
+                        <div class="formAddressData">
+                            <div>
+                                <label for="postal-code">CEP</label> <br>
+                                <input type="text" autocomplete="postal-code" name="postal-code" id="postal-code" placeholder="XXXXX-XXX" required />
+                            </div>
+                            <br>
+                            <div>
+                                <label for="estado">Estado</label><br>
+                                <select id="estado" name="estado">
+                                    <option value="">Selecione o estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="cidade">Cidade</label><br>
+                                <select id="cidade">
+                                    <option value="">Selecione a cidade</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="endereco">Endereço</label> <br>
+                                <input type="text" autocomplete="endereco" name="endereco" id="endereco" placeholder="Rua..." required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="paymentMethods">
+                    <div class="paymentMethodsh1">
+                        <div class="dNumberThree">
+                            <h1 class="numberThree">3</h1>
+                        </div>
+                        <h1 class="paymentTitle">Método de pagamento</h1>
+                    </div>
+                        <div class="paymentButtons">
+                            <div class="pix">
+                                <button>Pix</button>
+                            </div>
+                            <div class="pixPercent">
+                                <p>10% no PIX</p>
+                            </div>
+                            <div class="debit">
+                                <button>Débito</button>
+                            </div>
+                            <br>
+                            <div class="credit">
+                                <button>Crédito</button>
+                            </div>
+                            <br>
+                            <div class="paymentSlip">
+                                <button>Boleto</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- ONDA DO FOOTER -->
@@ -161,6 +284,55 @@
         });
         document.getElementById('carrinho-icon').addEventListener('mouseout', function() {
             this.src = '/Imagens/Carrinho.svg';
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const estadosECidades = {
+                "AC": ["Rio Branco", "Cruzeiro do Sul", "Sena Madureira"],
+                "AL": ["Maceió", "Arapiraca", "Palmeira dos Índios"],
+                "AP": ["Macapá", "Santana", "Laranjal do Jari"],
+                "AM": ["Manaus", "Parintins", "Itacoatiara"],
+                "BA": ["Salvador", "Feira de Santana", "Vitória da Conquista"],
+                "CE": ["Fortaleza", "Caucaia", "Juazeiro do Norte"],
+                "DF": ["Brasília"],
+                "ES": ["Vitória", "Vila Velha", "Serra"],
+                "GO": ["Goiânia", "Aparecida de Goiânia", "Anápolis"],
+                "MA": ["São Luís", "Imperatriz", "Timon"],
+                "MT": ["Cuiabá", "Várzea Grande", "Rondonópolis"],
+                "MS": ["Campo Grande", "Dourados", "Três Lagoas"],
+                "MG": ["Belo Horizonte", "Uberlândia", "Contagem"],
+                "PA": ["Belém", "Ananindeua", "Santarém"],
+                "PB": ["João Pessoa", "Campina Grande", "Santa Rita"],
+                "PR": ["Curitiba", "Londrina", "Maringá"],
+                "PE": ["Recife", "Jaboatão dos Guararapes", "Olinda"],
+                "PI": ["Teresina", "Parnaíba", "Picos"],
+                "RJ": ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias"],
+                "RN": ["Natal", "Mossoró", "Parnamirim"],
+                "RS": ["Porto Alegre", "Caxias do Sul", "Pelotas"],
+                "RO": ["Porto Velho", "Ji-Paraná", "Ariquemes"],
+                "RR": ["Boa Vista", "Rorainópolis", "Caracaraí"],
+                "SC": ["Florianópolis", "Joinville", "Blumenau"],
+                "SP": ["São Paulo", "Campinas", "Santos"],
+                "SE": ["Aracaju", "Nossa Senhora do Socorro", "Lagarto"],
+                "TO": ["Palmas", "Araguaína", "Gurupi"],
+            };
+
+            const estadoSelect = document.getElementById("estado");
+            const cidadeSelect = document.getElementById("cidade");
+
+            estadoSelect.addEventListener("change", function() {
+                const estado = this.value;
+                const cidades = estadosECidades[estado] || [];
+
+                cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>';
+
+                cidades.forEach(cidade => {
+                    const option = document.createElement("option");
+                    option.value = cidade;
+                    option.textContent = cidade;
+                    cidadeSelect.appendChild(option);
+                });
+            });
         });
 
     </script>
