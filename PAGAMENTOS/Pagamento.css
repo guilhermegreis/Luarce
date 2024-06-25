@@ -358,6 +358,13 @@ main {
 }
 
 /*-------------------------------------------------------- CSS que pertence somente a Pagamento Crédito: ----------------------------------------------------------------*/
+#PagamentoCredito-main {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #form-payment select {
     color: #777777;
@@ -368,12 +375,4 @@ main {
     padding: 5px;
     padding-left: 10px;
     width: 500px;
-}
-
-#PagamentoCredito-main {
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
