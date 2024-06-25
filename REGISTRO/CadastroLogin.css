@@ -192,7 +192,7 @@ form {
 form label {
     color: #777777;
     font-family: 'Inter';
-    padding-bottom: 5px;
+    border-bottom: 5px;
 }
 
 form input {
@@ -201,7 +201,6 @@ form input {
     border: 1px solid #BDBDBD;
     border-radius: 10px;
     padding: 5px;
-    padding-bottom: 2px;
     width: 100%;
     height: 35px;
 }
@@ -227,12 +226,12 @@ form input {
 }
 
 form div{
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #login-fail{
     color: red;
-    padding-top: 10px;
+    margin-top: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     display: none;

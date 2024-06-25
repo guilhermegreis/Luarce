@@ -291,10 +291,15 @@ main {
     flex-direction: column;
 }
 
+#form-payment div{
+    display: flex;
+    flex-direction: column;
+}
+
 #form-payment label{
-    padding-bottom: 5px;
     color: #777777;
     font-family: 'Inter';
+    margin-bottom: 5px;
 }
 
 #form-payment input {
@@ -303,11 +308,12 @@ main {
     border: 1px solid #BDBDBD;
     border-radius: 10px;
     padding: 5px;
-    padding-left: 10px;
+    margin-bottom: 25px;
     width: 500px;
+    height: 35px;
 } 
 
-.form-h1 {
+.form-h2 {
     font-family: 'Open Sans';
     font-size: 20px;
     display: flex;
@@ -374,6 +380,5 @@ main {
     border: 1px solid #BDBDBD;
     border-radius: 10px;
     padding: 5px;
-    padding-left: 10px;
     width: 500px;
 }
