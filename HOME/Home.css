@@ -1,3 +1,12 @@
+body {
+    background-color: #F7F6EF;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    position: relative;
+}
+
 header {
     width: 100%;
     height: 138px;
@@ -8,12 +17,6 @@ header {
 a {
     text-decoration: none;
     color: inherit; 
-}
-
-body {
-    background-color: #F7F6EF;
-    width: 100%;
-    margin: 0;
 }
 
 .Logo {
@@ -156,14 +159,13 @@ footer {
 
 main {
     background-color: #C4C298; 
-    width: 100%;
+    min-width: 100%;
     height: 2290px;
 }
 
-/* Carousel Section */
 .carousel {
     position: relative;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     overflow: hidden;
     background-color: #C4C4C4; /* Fallback color */
@@ -173,14 +175,11 @@ main {
 
 .carousel-container {
     display: flex;
-    /*width: calc(100% * totalSlides);*/
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateX(-100%); /* All slides initially off-screen (left) */
     transition: transform 0.5s ease-in-out; /* Animate transform during slide change */
 }
-
 
 .carousel-bg {
     object-fit: cover;
@@ -240,22 +239,24 @@ main {
 }
 
 .carousel-slide {
-    flex: 0 0 100%;
-    width: 100%;
-    transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave */
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide img {
     width: 100%;
     height: auto;
+    display: flex;
+    overflow: hidden;
 }
 
 .carousel-indicators {
     position: absolute;
     bottom: 10px; /* Adjust spacing as needed */
     text-align: center;
-    /* Add a width to ensure centering works */
-    width: 72%;
+    justify-content: center;
+    display: flex; /* Ensure the dots are centered */
+    gap: 14px; /* Add space between dots */
 }
 
 .indicator-dot {
@@ -263,16 +264,15 @@ main {
     height: 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.75);
-    margin: 0 10px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.20);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    flex-shrink: 0;
 }
 
 .indicator-dot.active {
     background-color: rgba(94, 94, 94, 0.80); /* Active dot color */
     border: 1px solid rgba(0, 0, 0, 0.11);
-    
 }
 
 /* Seção de Categorias */
@@ -611,4 +611,169 @@ section.experiencias a {
 
 section.experiencias a:hover {
     background-color: #C4C298;
+}
+
+/* POP UP */
+
+#overlay {
+    display: none; /* Escondido inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  #popup {
+    display: none; /* Escondido inicialmente */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+  }
+
+#popup img {
+    max-width: 351px;
+    min-width: 351px;
+    min-height: 468px;
+    max-height: 468px;
+    margin: 0;
+    border: none;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.popup-image-container {
+    margin: 0;
+    border: none;
+    padding: 0;
+    justify-content: middle;
+    width:fit-content;
+    align-items: middle;
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left: 27px;
+}
+
+#popup-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#popup-content h2 {
+    margin: 0;
+    font-weight: 700;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: rgba(17, 17, 17, 0.97);
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+#popup-content p {
+    justify-content: center;
+    align-items: center;
+    min-width: 297px;
+    max-width: 297px;
+    height: auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup-content label {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: start;
+    margin-top: 5px;
+}
+
+#popup-content input {
+    margin-top: 5px;
+    min-width: 297px;
+    min-height: 32px;
+    max-width: 297px;
+    max-height: 32px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 5px; /* Ajuste o valor conforme necessário */
+    padding-right: 5px;
+}
+
+input:focus {
+    border-color: #111111; /* Substitua pelo código de cor desejado */
+    outline: none; /* Remove o outline padrão do navegador */
+}
+
+#popup-content button {
+    margin-top: 20px;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 48px;
+    max-height: 48px;
+    position: relative;
+    left: 10%;
+    background-color: #C4C298;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#popup-content button:hover {
+    background-color: #B0AE84;
+}
+
+.LinhaPopUp-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+.LinhaPopUp {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0;
+    border: none;
+
+}
+
+.horizontal-line-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    border: none;
 }
