@@ -238,13 +238,13 @@ form div{
     display: none;
 }
 
-.password-recover-link{
+#password-recover-link{
     color: #777777;
     height: 17px;
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
 }
 
-.password-recover-link:hover{
+#password-recover-link:hover{
     text-decoration: underline;
 }

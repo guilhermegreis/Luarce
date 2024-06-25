@@ -86,6 +86,57 @@
                 <!-- 5 Somente quando todos os campos estiverem corretamente preenchidos é que se vai para próxima página (PagamentoAprovado.html) -->
                   <!-- 6 Se possível coloque um código secreto pra gente colocar na hora de apresentar pra poder mostrar pro professor a página de Pagamento inválido (PagamentoErro.html), tipo, se a gente digitar só "Luarce" no campo de Nome, e preencher tudo certinho depois e clicar em Pagar aí vai ir pra tela de pagamento inválido -->
 
+        <div class="payment-container">
+            <div class="payment-h1">
+                <a>Pague com Cartão de Débito</a>
+            </div>
+            <form id="form-payment" action="" method="post">
+                <div class="form-h1">Dados do Titular do cartão</div>
+                <div>
+                    <label for="name">Nome Completo</label> <br>
+                    <input type="text" autocomplete="name" name="name" id="name" required placeholder="Digite aqui o nome do tituar do cartão"/>
+                </div>
+                <br>
+                <div>
+                    <label for="cpf">CPF</label> <br>
+                    <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" required placeholder="XXX.XXX.XXX-XX"/>
+                </div>
+                <br>
+                <div class="form-h1">Dados do Cartão</div>
+                <div>
+                    <label for="number">Número</label> <br>
+                    <input type="text" autocomplete="cc-number" name="number" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}" maxlength="19" id="number" required placeholder="XXXX XXXX XXXX XXXX"/>
+                </div>
+                <br>
+                <div>
+                    <label for="date">Data de Validade</label> <br>
+                    <input type="month" autocomplete="cc-exp" name="date" id="date" required placeholder="MM / YY"/>
+                </div>
+                <br>
+                <div>
+                    <label for="card-name">Nome</label> <br>
+                    <input type="text" autocomplete="cc-name" name="card-nam" id="card-nam" required placeholder="Digite exatamente como está no cartão"/>
+                </div>
+                <br>
+                <div>
+                    <label for="ccv">CCV</label> <br>
+                    <input type="text" name="ccv" autocomplete="off" id="ccv" maxlength="3" pattern="\d{3}" required placeholder="XXX"/>
+                </div>
+                <br>
+                <div>
+                    <label for="parcela">Parcelas</label><br>
+                    <select id="parcelas" name="estado">
+                        
+                    </select>
+                    <input type='hidden' id="parcelasInput" name="parcelasInput" value=""/>
+                </div>
+                <br>
+                <div id="pay-button" class="main-button">Pagar</div>
+            </form>
+        </div>
+        <div id="awaiting-payment">
+            <a><p>Aguarde a aprovação do pagamento...</p></a>
+        </div>
     </main>
 
     <!-- ONDA DO FOOTER -->
@@ -163,7 +214,8 @@
         });
 
     </script>
-
+    <script src="PagamentoCredito.js"></script>
+    <script src="PagamentoCartoes.js"></script>
 
 </body>
 

@@ -255,14 +255,125 @@ main {
     height: 1000px;
 }
 
-/*-------------------------------------------------------- CSS que pertence a Pagamento Debito: ------------------------------------------------------------------------*/
+/*-------------------------------------------------------- CSS que pertence a Pagamento Debito e Credito: -------------------------------------------------------------*/
 
 #PagamentoDebito-main {
-    height: 1000px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*-------------------------------------------------------- CSS que pertence a Pagamento Crédito: ------------------------------------------------------------------------*/
+.payment-container{
+    background-color: white;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #C4C298;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom:auto;
+}
+.payment-h1{
+    color: #505050;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#form-payment{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-payment label{
+    padding-bottom: 5px;
+    color: #777777;
+    font-family: 'Inter';
+}
+
+#form-payment input {
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 500px;
+} 
+
+.form-h1 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    display: flex;
+    font-weight: bold;
+    color: #555555;
+    margin: 20px;
+    width: 500px;
+}
+
+.main-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0;
+    padding: 10px;
+    width: 280px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #C4C298;
+    border-radius: 5px;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+.main-button:hover{
+    cursor: pointer;
+    background-color: #666666;
+}
+
+#awaiting-payment {
+    display: none;
+}
+
+#awaiting-payment p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #E2E1CC;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.13); 
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    width: 525px;
+    margin-top: 50px;
+}
+
+/*-------------------------------------------------------- CSS que pertence somente a Pagamento Crédito: ----------------------------------------------------------------*/
+
+#form-payment select {
+    color: #777777;
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 500px;
+}
 
 #PagamentoCredito-main {
-    height: 1000px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

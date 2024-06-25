@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerButton = document.querySelector('#register-button');
     const logInForm = document.querySelector('#login-form');
     const logInButton = document.querySelector('#login-button');
-    const logInFail = document.getElementById('login-fail');
+    const logInFail = document.querySelector('#login-fail');
     
     registerButton.addEventListener('click', function(event) {
         if(!registerForm.checkValidity()){
