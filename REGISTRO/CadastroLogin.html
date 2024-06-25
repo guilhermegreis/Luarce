@@ -31,7 +31,7 @@
     <link rel="icon" href="/Imagens/FAVICON/FAVICON128X128.ico" sizes="128x128" type="image/x-ico">
     <link rel="icon" href="/Imagens/FAVICON/FAVICON256X256.ico" sizes="256x256" type="image/x-ico">
     <!-- Link do .CSS da página -->
-    <link rel="stylesheet" href="Carrinho.css">
+    <link rel="stylesheet" href="CadastroLogin.css">
 
     <link rel="preload" href="/imagens/Logo.svg" as="image">
     <link rel="preload" href="/imagens/Favoritos.svg" as="image">
@@ -48,8 +48,6 @@
     <link rel="preload" href="/imagens/WhatsApp.svg" as="image">
     <link rel="preload" href="/imagens/Email.svg" as="image">
     <link rel="preload" href="/Imagens/TikTok.svg" as="image">
-
-
 </head>
 
 <body>
@@ -82,7 +80,45 @@
         <!-- 1 Não vai precisar fazer muita lógica nessa página pois não temos um banco de dados -->
            <!-- 2 Não esquecer de fazer a verificação se a senha digitada é igual a outra senha de confirmação, ali na parte de "Criar conta" -->
               <!-- 3 Se o usuário clicar em esqueci minha senha mande-o para a página de erro (/ERRO.html) -->
-                
+              
+        <div class="register-container">
+            <div class="register-h1">Criar Contra</div>
+            <form id="register-form" action="" method="post">
+                <div>
+                    <label for="register-name">Nome</label>
+                    <input type="text" autocomplete="name" name="register-name" id="register-name" placeholder="Como prefere ser chamado?" required />
+                </div>
+                <div>
+                    <label for="register-email">E-mail</label>
+                    <input type="email" autocomplete="email" name="register-email" id="register-email" required />
+                </div>
+                <div>
+                    <label for="register-password">Senha</label>
+                    <input type="password" name="password" id="register-password" minlength="8" required />
+                </div>
+                <div>
+                    <label for="confirm-password">Confirme sua senha</label>
+                    <input type="password" name="confirm-password" id="confirm-password" minlength="8" required />
+                </div>
+                <div id="register-button" class="main-button">Finalizar</div>
+            </form>
+        </div>
+        <div class="register-container">
+            <div class="register-h1">Já Sou Cliente</div>
+            <form id="login-form" action="" method="post">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" autocomplete="email" name="email" id="signin-email" required />
+                </div>
+                <div>
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="password" id="login-password" minlength="8" required />
+                    <a class="password-recover-link" href="/ERRO.html">Esquecia minha senha.</a>
+                </div>
+                <div id="login-button" class="main-button">Entrar</div>
+                <div id="login-fail">E-mail ou senha incorreto.</div>
+            </form>
+        </div>
     </main>
 
     <!-- ONDA DO FOOTER -->
