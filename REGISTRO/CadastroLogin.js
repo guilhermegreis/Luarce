@@ -2,7 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     //VALIDACAO DO INPUT DO NOME
     const registerName = document.querySelector("#register-name");
     registerName.addEventListener('input',function(ev){
-        this.value = this.value.replace(/[^a-zA-ZÀ-ÖØ-öø-ÿ\s]/g, "").replace(/\s+/g, ' ').replace(/^\s+/, '');
+        if(ev.inputType !== "insertText") return;
+        ev.preventDefault()
+        var pattern = new RegExp(/^[a-zA-ZÀ-ÖØ-öø-ÿ\s]+$/i);
+        if(!pattern.test(ev.data) || (ev.data== " " && this.value[this.value.length-2] == " ")){
+            this.value = this.value.slice(0, -1);
+        }
     })
 
     //VALIDACAO DAS SENHAS
