@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head >
+<head>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,6 +48,15 @@
     <link rel="preload" href="/imagens/Email.svg" as="image">
     <link rel="preload" href="/Imagens/TikTok.svg" as="image">
 
+    <script>
+        function goBack() {
+            if (document.referrer) {
+                window.history.back();
+            } else {
+                window.location.href = 'pagina_inicial.html';
+            }
+        }
+    </script>
 
 </head>
 
@@ -98,7 +107,7 @@
                     <h5>Ordenar</h5>
                     <a class="falso-btn" onclick="ordenarPor('preco', 'desc')">Maior preço</a>
                     <a class="falso-btn" onclick="ordenarPor('preco', 'asc')">Menor preço</a>
-                    <a class="falso-btn" href="Catalogo.html">Desordenar</a>
+                    <a class="falso-btn">Desordenar</a>
                 </div>
 
             </div>
@@ -106,7 +115,7 @@
             <div class="produtos">
                 <div class="product-item" id="produto-1">
                     <a href="/PRODUTOS/Vanilla.html">
-                    <img src="/Imagens/270X270.svg" alt="" class="foto-produto">
+                    <img src="/Imagens/270X270_Vanilla.svg" alt="" class="foto-produto">
                     <p class="produto">Vela Aromática Vanilla - 130g</p>
                     <p class="preco">R$ 45,00</p>
                     <p class="pix">10% no Pix</p>
@@ -171,7 +180,7 @@
                 <a class="Gmail">Luarce@gmail.com</a>
                 <a href="https://www.instagram.com/luarcevelas/" target="_blank" rel="noopener noreferrer"><img class="Instagram" src="/Imagens/Instagram.svg" alt=""></a>
                 <a href="https://www.tiktok.com/@luarcevelas" target="_blank" rel="noopener noreferrer"><img class="Tiktok" src="/Imagens/Tiktok.svg" alt=""></a>
-                <a href="/ERRO.html" target="_blank" rel="noopener noreferrer"><img class="WhatsApp" src="/Imagens/WhatsApp.svg" alt=""></a>
+                <a href="https://api.whatsapp.com/send/?phone=554792072003&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img class="WhatsApp" src="/Imagens/WhatsApp.svg" alt=""></a>
             </div>
             <div>
                 <!-- Logo do footer -->
