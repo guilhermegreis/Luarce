@@ -214,30 +214,32 @@
                         <div class="paymentSlip">
                             <button>Boleto</button>
                         </div>
+                    </div><br>
+                    <div id="cardFormContainer" class="hidden">
+                        <form id="cardForm">
+                            <!-- Campos do formulário de cartão -->
+                            <label for="cardNumber">Número do Cartão:</label>
+                            <input type="text" id="cardNumber" name="cardNumber" required>
+                    
+                            <label for="expiryMonth">Mês de Validade:</label>
+                            <input type="text" id="expiryMonth" name="expiryMonth" required>
+                    
+                            <label for="expiryYear">Ano de Validade:</label>
+                            <input type="text" id="expiryYear" name="expiryYear" required>
+                    
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" required>
+                    
+                            <label for="cardHolderName">Nome do Titular:</label>
+                            <input type="text" id="cardHolderName" name="cardHolderName" required>
+                    
+                            <label for="cardHolderCPF">CPF do Titular:</label>
+                            <input type="text" id="cardHolderCPF" name="cardHolderCPF" required>
+                    
+                            <label for="cardHolderBirthdate">Data de Nascimento do Titular:</label>
+                            <input type="text" id="cardHolderBirthdate" name="cardHolderBirthdate" required>
+                        </form>
                     </div>
-                    <form id="cardForm" class="hidden">
-                        <!-- Campos do formulário de cartão -->
-                        <label for="cardNumber">Número do Cartão:</label>
-                        <input type="text" id="cardNumber" name="cardNumber" required>
-                    
-                        <label for="expiryMonth">Mês de Validade:</label>
-                        <input type="text" id="expiryMonth" name="expiryMonth" required>
-                    
-                        <label for="expiryYear">Ano de Validade:</label>
-                        <input type="text" id="expiryYear" name="expiryYear" required>
-                    
-                        <label for="cvv">CVV:</label>
-                        <input type="text" id="cvv" name="cvv" required>
-                    
-                        <label for="cardHolderName">Nome do Titular:</label>
-                        <input type="text" id="cardHolderName" name="cardHolderName" required>
-                    
-                        <label for="cardHolderCPF">CPF do Titular:</label>
-                        <input type="text" id="cardHolderCPF" name="cardHolderCPF" required>
-                    
-                        <label for="cardHolderBirthdate">Data de Nascimento do Titular:</label>
-                        <input type="text" id="cardHolderBirthdate" name="cardHolderBirthdate" required>
-                    </form>
             </div>
         </div>
     </main>
@@ -291,12 +293,12 @@
         $(document).ready(function() {
         // Evento de clique para o botão Débito
         $('#debitBtn').click(function() {
-            $('#cardForm').removeClass('hidden'); // Mostra o formulário
+            $('#cardFormContainer').removeClass('hidden'); // Mostra o container do formulário
         });
 
         // Evento de clique para o botão Crédito
         $('#creditBtn').click(function() {
-            $('#cardForm').removeClass('hidden'); // Mostra o formulário
+            $('#cardFormContainer').removeClass('hidden'); // Mostra o container do formulário
         });
         });
     
