@@ -411,6 +411,10 @@ main {
     height: 100%;
 }
 
+.hiddenForm {
+    display: none;
+}
+
 .containerPedido{
     background-color: #F7F6EF;
 }
