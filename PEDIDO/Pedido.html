@@ -291,6 +291,30 @@
             });
         }
 
+        function hideCardForm() {
+        const cardFormContainer = document.getElementById('cardFormContainer');
+        if (cardFormContainer) {
+            cardFormContainer.classList.add('hidden');
+        }
+        }
+
+        const pixBtn = document.getElementById('pixBtn');
+        if (pixBtn) {
+            pixBtn.addEventListener('click', function() {
+                // Oculta o formulário
+                document.getElementById('cardForm').style.display = 'none';
+            });
+        }
+
+        const boletoBtn = document.getElementById('boletoBtn');
+        if (boletoBtn) {
+        boletoBtn.addEventListener('click', function() {
+            // Oculta o formulário
+            document.getElementById('cardForm').style.display = 'none';
+        });
+        }
+
+
         $(document).ready(function() {
         // Evento de clique para o botão Débito
         $('#debitBtn').click(function() {
