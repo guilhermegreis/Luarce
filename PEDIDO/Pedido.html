@@ -215,31 +215,17 @@
                         <div class="paymentSlip">
                             <button>Boleto</button>
                         </div>
-                    </div><br>
-                    <div id="cardFormContainer" class="hidden">
-                        <form id="cardForm">
-                            <!-- Campos do formulário de cartão -->
-                            <label for="cardNumber">Número do Cartão:</label>
-                            <input type="text" id="cardNumber" name="cardNumber" required>
-                    
-                            <label for="expiryMonth">Mês de Validade:</label>
-                            <input type="text" id="expiryMonth" name="expiryMonth" required>
-                    
-                            <label for="expiryYear">Ano de Validade:</label>
-                            <input type="text" id="expiryYear" name="expiryYear" required>
-                    
-                            <label for="cvv">CVV:</label>
-                            <input type="text" id="cvv" name="cvv" required>
-                    
-                            <label for="cardHolderName">Nome do Titular:</label>
-                            <input type="text" id="cardHolderName" name="cardHolderName" required>
-                    
-                            <label for="cardHolderCPF">CPF do Titular:</label>
-                            <input type="text" id="cardHolderCPF" name="cardHolderCPF" required>
-                    
-                            <label for="cardHolderBirthdate">Data de Nascimento do Titular:</label>
-                            <input type="text" id="cardHolderBirthdate" name="cardHolderBirthdate" required>
-                        </form>
+                    </div>
+                    <br>
+                    <div class="cardDetails" id="cardDetails" style="display: none;">
+                        <label for="cardNumber">Número do Cartão</label>
+                        <input type="text" id="cardNumber" maxlength="12">
+                        <label for="cardName">Nome no Cartão</label>
+                        <input type="text" id="cardName">
+                        <label for="cardCVC">CVC</label>
+                        <input type="text" id="cardCVC" maxlength="3">
+                        <label for="cardExpiry">Data de Validade (MM/AA)</label>
+                        <input type="text" id="cardExpiry" placeholder="MM/AA">
                     </div>
             </div>
         </div>
@@ -291,56 +277,19 @@
             });
         }
 
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     const metodoPagamentoInputs = document.querySelectorAll('input[name="metodoPagamento"]');
-        //     const formCartao = document.getElementById('formCartao');
+        document.addEventListener("DOMContentLoaded", function () {
+        const debitBtn = document.getElementById('debitBtn');
+        const creditBtn = document.getElementById('creditBtn');
+        const cardDetails = document.getElementById('cardDetails');
 
-        //     metodoPagamentoInputs.forEach(input => {
-        //         input.addEventListener('change', function() {
-        //             if (input.value === 'cartao') {
-        //                 formCartao.classList.remove('hidden');
-        //             } else {
-        //                 formCartao.classList.add('hidden');
-        //             }
-        //         });
-        //     });
-        // });
-
-        // function hideCardForm() {
-        // const cardFormContainer = document.getElementById('cardFormContainer');
-        // if (cardFormContainer) {
-        //     cardFormContainer.classList.add('hidden');
-        // }
-        // }
-
-        const pixBtn = document.getElementById('pixBtn');
-        if (pixBtn) {
-            pixBtn.addEventListener('click', function() {
-                // Oculta o formulário
-                document.getElementById('cardForm').style.display = 'none';
-            });
-        }
-
-        const boletoBtn = document.getElementById('boletoBtn');
-        if (boletoBtn) {
-        boletoBtn.addEventListener('click', function() {
-            // Oculta o formulário
-            document.getElementById('cardForm').style.display = 'none';
-        });
-        }
-
-
-        $(document).ready(function() {
-        // Evento de clique para o botão Débito
-        $('#debitBtn').click(function() {
-            $('#cardFormContainer').removeClass('hidden'); // Mostra o container do formulário
+        debitBtn.addEventListener('click', function () {
+            cardDetails.style.display = 'block';
         });
 
-        // Evento de clique para o botão Crédito
-        $('#creditBtn').click(function() {
-            $('#cardFormContainer').removeClass('hidden'); // Mostra o container do formulário
+        creditBtn.addEventListener('click', function () {
+            cardDetails.style.display = 'block';
         });
-        });
+    });
     
         // Preload das imagens alternativas
         preloadImages([

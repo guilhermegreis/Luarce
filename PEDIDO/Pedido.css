@@ -411,10 +411,26 @@ main {
     height: 100%;
 }
 
-.hidden {
-    display: none;
+.cardDetails {
+    background-color: #F7F7EF;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
-.containerPedido{
-    background-color: #F7F6EF;
+.cardDetails label {
+    display: block;
+    margin-bottom: 5px;
+    color: #777777;
+    font-family: 'Inter';
+}
+
+.cardDetails input {
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: calc(100% - 22px);
 }
