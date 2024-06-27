@@ -215,15 +215,28 @@
                             <button>Boleto</button>
                         </div>
                     </div>
-                    <form id="debitForm" class="hiddenForm">
-                        <input type="text" placeholder="Número do cartão de débito">
-                        <input type="text" placeholder="Validade">
-                        <input type="text" placeholder="CVV">
-                    </form>
-                    <form id="creditForm" class="hiddenForm">
-                        <input type="text" placeholder="Número do cartão de crédito">
-                        <input type="text" placeholder="Validade">
-                        <input type="text" placeholder="CVV">
+                    <form id="cardForm" class="hidden">
+                        <!-- Campos do formulário de cartão -->
+                        <label for="cardNumber">Número do Cartão:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" required>
+                    
+                        <label for="expiryMonth">Mês de Validade:</label>
+                        <input type="text" id="expiryMonth" name="expiryMonth" required>
+                    
+                        <label for="expiryYear">Ano de Validade:</label>
+                        <input type="text" id="expiryYear" name="expiryYear" required>
+                    
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    
+                        <label for="cardHolderName">Nome do Titular:</label>
+                        <input type="text" id="cardHolderName" name="cardHolderName" required>
+                    
+                        <label for="cardHolderCPF">CPF do Titular:</label>
+                        <input type="text" id="cardHolderCPF" name="cardHolderCPF" required>
+                    
+                        <label for="cardHolderBirthdate">Data de Nascimento do Titular:</label>
+                        <input type="text" id="cardHolderBirthdate" name="cardHolderBirthdate" required>
                     </form>
             </div>
         </div>
@@ -265,6 +278,7 @@
 
     <!-- SCRIPT -->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Função para fazer preload das imagens
         function preloadImages(srcArray) {
@@ -274,19 +288,16 @@
             });
         }
 
-        const debitForm = document.getElementById('debitForm');
-        const creditForm = document.getElementById('creditForm');
-        const debitBtn = document.getElementById('debitBtn');
-        const creditBtn = document.getElementById('creditBtn');
-
-        debitBtn.addEventListener('click', function() {
-            debitForm.style.display = 'block';
-            creditForm.style.display = 'none';
+        $(document).ready(function() {
+        // Evento de clique para o botão Débito
+        $('#debitBtn').click(function() {
+            $('#cardForm').removeClass('hidden'); // Mostra o formulário
         });
 
-        creditBtn.addEventListener('click', function() {
-            creditForm.style.display = 'block';
-            debitForm.style.display = 'none';
+        // Evento de clique para o botão Crédito
+        $('#creditBtn').click(function() {
+            $('#cardForm').removeClass('hidden'); // Mostra o formulário
+        });
         });
     
         // Preload das imagens alternativas
