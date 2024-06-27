@@ -143,6 +143,7 @@ input::placeholder {
     width: 100%;
 }
 
+
 /* Estilos para formAddressData select */
 .formAddressData select {
     color: #777777;
@@ -441,4 +442,8 @@ main {
 
 .body_purchase {
     display: flex;
+}
+
+.hiddenForm {
+    display: none;
 }

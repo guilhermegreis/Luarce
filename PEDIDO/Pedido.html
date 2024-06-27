@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido</title>
+<head >
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pedido</title>
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- FAVICONs .SVG (16 a 512) -->
+     <!-- FAVICONs .SVG (16 a 512) -->
     <link rel="icon" href="/Luarce/Imagens/FAVICON/FAVICON16X16.svg" sizes="16x16" type="image/svg">
     <link rel="icon" href="/Luarce/Imagens/FAVICON32X32.svg" sizes="32x32" type="image/svg">
     <link rel="icon" href="/Luarce/Imagens/FAVICON48X48.svg" sizes="48x48" type="image/svg">
@@ -61,13 +62,13 @@
 
 <body>
 
-    <!-- HEADER -->
+	<!-- HEADER -->
     <header class="headerPedido">
 
         <!-- Logo Principal -->
-        <a href="/Luarce/"><img class="Logo" src="/Luarce/Imagens/Logo.svg" alt=""></a>
+        <a href="/Luarce/index.html"><img class="Logo" src="/Luarce/Imagens/Logo.svg" alt=""></a>
         <div class="d-flex OpcoesHeader">
-            <a href="/Luarce/">Home</a>
+            <a href="/Luarce/index.html">Home</a>
             <a href="/Luarce/CATÁLOGO/Catalogo.html">Catálogo</a>
             <a href="/Luarce/GLOSSÁRIO/Glossario.html">Glossário</a>
             <a href="/Luarce/ERRO.html">Blog</a>
@@ -89,293 +90,151 @@
          <!-- Essa tela de Pedido vem após a de Carrinho e a próxima será a de pagamento que a pessoa escolher (/PAGAMENTO/Debito.html, /PAGAMENTO/Pix.html....) -->
           <!-- Não esquecer de salvar o que o usuário digitar nas informações pessoais -->
             <!-- Não esquecer de calcular o frete de acordo com o CEP (colocar lógica com javascript de se for 88300-001 à 88319-999 ou seja, for de itajaí, o valor é R$ 11,99 fixo, e para qualquer outro CEP fora desse espectro é 21,99) -->
-              <!-- Não esquecer que se for Pix tem que descontar 10% do valor, sem desconto para os outros pagamentos -->
+              <!-- Não esquecer que se for Pix tem que descontar 10% do valor, sem contar o valor do frete pois o frete não tem desconto -->
+                <!-- Não esquecer de que o usuário pode inserir um cumpom de desconto que será LUARCE10, se possível colocar um limite de 10 caracteres pro cupom -->
+                  <!-- Colocar uma pequena mensagem abaixo do campo onde o usuário digita o cupom escrita "Cupom inválido ou expirado." (coloquei lá no figma, mas ela só deve aparecer quando o usuário de fato colocar um voucher inválido) -->
+                     <!-- Se o cupom validar, será aplicado 10% ao valor dos produtos não contando frete e se a pessoa pagar por pix também pode juntar e fazer 20% -->
+                        <!-- E se o cupom validar também exiba uma mensagem no mesmo lugar de onde apareceria a de cupom inválido, na mesma fonte e tudo, escrito "Cupom válido! Seu desconto já foi inserido." -->
 
-        <!-- INICIO DO MAIN -->
-
-        <h1 class="p-3 text-center">Informações do Pedido</h1>
-
-        <!-- Informações Pessoais -->
-
-        <div class="body_purchase">
-            <div>
-                <div class="containerPedido">
-                    <div class="infoPessoais">
-                        <div class="infoPessoaish1">
-                            <div class="dNumeroUm">
-                                <h1 class="numeroUm">1</h1>
-                            </div>
-                            <h1 class="infoUm">Informações Pessoais</h1>
+        <div class="bodyPedido">
+            <div class="containerPedido">
+                <div class="infoPessoais">
+                    <div class="infoPessoaish1">
+                        <div class="dNumeroUm">
+                            <h1 class="numeroUm">1</h1>
                         </div>
-                        <form action="" method="get">
-                            <div class="formPersonalData">
-                                <div>
-                                    <label for="name">Nome Completo</label> <br>
-                                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="name">CPF</label><br>
-                                    <input type="text" name="name" id="name" placeholder="XXX.XXX.XXX-XX." required />
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="name">Data de Nascimento</label><br>
-                                    <input type="text" name="name" id="name" placeholder="XX/XX/XXXX" required />
-                                </div>
+                        <h1 class="infoUm">Informações Pessoais</h1>
+                    </div>
+                    <form action="" method="get">
+                        <div class="formPersonalData">
+                            <div>
+                                <label for="name">Nome Completo</label> <br>
+                                <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
                             </div>
-                        </form>
-                    </div>
-                </div> 
-
-
-                <form action="" method="get">
-                    <div class="formAddressData">
-                        <div>
-                            <label for="postal-code">CEP</label> <br>
-                            <input type="text" autocomplete="postal-code" name="postal-code" id="postal-code" placeholder="XXXXX-XXX" required />
-                        </div>
-                        <br>
-                        <div>
-                            <label for="estado">Estado</label><br>
-                            <select id="estado" name="estado">
-                                <option value="">Selecione o estado</option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                                <option value="EX">Estrangeiro</option>
-                            </select>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="cidade">Cidade</label><br>
-                            <select id="cidade">
-                                <option value="">Selecione a cidade</option>
-                            </select>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="endereco">Endereço</label> <br>
-                            <input type="text" autocomplete="endereco" name="endereco" id="endereco" placeholder="Rua..." required />
-                        </div>
-                    </div>
-                </form>
-                <hr class="my-4">
-
-                <!-- opções de pgto -->
-
-                <div class="container">
-                    <h4 class="mb-3">Pagamento</h4>
-
-                    <div class="form-check">
-                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                        <label class="form-check-label" for="debit">Débito</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
-                        <label class="form-check-label" for="credit">Crédito</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input id="pix" name="paymentMethod" type="radio" class="form-check-input" required>
-                        <label class="form-check-label" for="pix">Pix</label>
-                    </div>
-
-                    <!-- entrada de dados do cartão -->
-                    <div id="card-info" class="mt-3" style="display: none;">
-                        <h5 class="mb-3">Informações do Cartão</h5>
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="cc-name" class="form-label">Nome no cartão</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <br>
+                            <div>
+                                <label for="name">CPF</label><br>
+                                <input type="text" name="name" id="name" placeholder="XXX.XXX.XXX-XX." required />
                             </div>
-
-                            <div class="col-md-6">
-                                <label for="cc-number" class="form-label">Número do cartão</label>
-                                <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
-
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-expiration" class="form-label">Validade</label>
-                                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="4" required>
-
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-cvv" class="form-label">CVV</label>
-                                <input type="text" id="cvv" name="cvv" maxlength="4" required>
+                            <br>
+                            <div>
+                                <label for="name">Data de Nascimento</label><br>
+                                <input type="text" name="name" id="name" placeholder="XX/XX/XXXX" required />
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-
-                <hr class="my-4">
-
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Finalizar Pedido</button>
+                
+                <div class="infoEntrega">
+                    <div class="infoEntregash1">
+                        <div class="dNumeroDois">
+                            <h1 class="numeroDois">2</h1>
+                        </div>
+                        <h1 class="infoDois">Informações Pessoais</h1>
+                    </div>
+                    <form action="" method="get">
+                        <div class="formAddressData">
+                            <div>
+                                <label for="postal-code">CEP</label> <br>
+                                <input type="text" autocomplete="postal-code" name="postal-code" id="postal-code" placeholder="XXXXX-XXX" required />
+                            </div>
+                            <br>
+                            <div>
+                                <label for="estado">Estado</label><br>
+                                <select id="estado" name="estado">
+                                    <option value="">Selecione o estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="cidade">Cidade</label><br>
+                                <select id="cidade">
+                                    <option value="">Selecione a cidade</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="endereco">Endereço</label> <br>
+                                <input type="text" autocomplete="endereco" name="endereco" id="endereco" placeholder="Rua..." required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="paymentMethods">
+                    <div class="paymentMethodsh1">
+                        <div class="dNumberThree">
+                            <h1 class="numberThree">3</h1>
+                        </div>
+                        <h1 class="paymentTitle">Método de pagamento</h1>
+                    </div>
+                    <div class="paymentButtons">
+                        <div class="pix">
+                            <button id="pixBtn">Pix</button>
+                        </div>
+                        <div class="pixPercent">
+                            <p>10% no PIX</p>
+                        </div>
+                        <div class="debit">
+                            <button id="debitBtn">Débito</button>
+                        </div>
+                        <br>
+                        <div class="credit">
+                            <button id="creditBtn">Crédito</button>
+                        </div>
+                        <br>
+                        <div class="paymentSlip">
+                            <button>Boleto</button>
+                        </div>
+                    </div>
+                    <form id="debitForm" class="hiddenForm">
+                        <input type="text" placeholder="Número do cartão de débito">
+                        <input type="text" placeholder="Validade">
+                        <input type="text" placeholder="CVV">
+                    </form>
+                    <form id="creditForm" class="hiddenForm">
+                        <input type="text" placeholder="Número do cartão de crédito">
+                        <input type="text" placeholder="Validade">
+                        <input type="text" placeholder="CVV">
+                    </form>
             </div>
-
-            <div>
-                <h1>
-                    Resumo do pedido
-                </h1>
-            </div>
-        </div>  
-
-        <!-- JavaScript -->
-        <script>
-            document.getElementById('debit').addEventListener('click', function () {
-                document.getElementById('card-info').style.display = 'block';
-            });
-
-            document.getElementById('credit').addEventListener('click', function () {
-                document.getElementById('card-info').style.display = 'block';
-            });
-
-            document.getElementById('pix').addEventListener('click', function () {
-                document.getElementById('card-info').style.display = 'none';
-            });
-        
-            // Função para fazer preload das imagens
-            function preloadImages(srcArray) {
-                srcArray.forEach(src => {
-                    const img = new Image();
-                    img.src = src;
-                });
-            }
-    
-            // Preload das imagens alternativas
-            preloadImages([
-                '/Luarce/Imagens/Favoritos2.svg',
-                '/Luarce/Imagens/Usuario2.svg',
-                '/Luarce/Imagens/Carrinho3.svg',
-            ]);
-        
-            // Funções para alterar imagem quando o cursor ficar sob a imagem
-            document.getElementById('favoritos-icon').addEventListener('mouseover', function() {
-                this.src = '/Luarce/Imagens/Favoritos2.svg';
-            });
-            document.getElementById('favoritos-icon').addEventListener('mouseout', function() {
-                this.src = '/Luarce/Imagens/Favoritos.svg';
-            });
-        
-            document.getElementById('usuario-icon').addEventListener('mouseover', function() {
-                this.src = '/Luarce/Imagens/Usuario2.svg';
-            });
-            document.getElementById('usuario-icon').addEventListener('mouseout', function() {
-                this.src = '/Luarce/Imagens/Usuario.svg';
-            });
-        
-            document.getElementById('carrinho-icon').addEventListener('mouseover', function() {
-                this.src = '/Luarce/Imagens/Carrinho3.svg';
-            });
-            document.getElementById('carrinho-icon').addEventListener('mouseout', function() {
-                this.src = '/Luarce/Imagens/Carrinho.svg';
-            });
-
-            document.addEventListener("DOMContentLoaded", () => {
-                //SE NECESSÁRIO, ADICIONA MAIS ESTADOS
-                const estadosECidades = {
-                    "AC": ["Rio Branco", "Cruzeiro do Sul", "Sena Madureira"],
-                    "AL": ["Maceió", "Arapiraca", "Palmeira dos Índios"],
-                    "AP": ["Macapá", "Santana", "Laranjal do Jari"],
-                    "AM": ["Manaus", "Parintins", "Itacoatiara"],
-                    "BA": ["Salvador", "Feira de Santana", "Vitória da Conquista"],
-                    "CE": ["Fortaleza", "Caucaia", "Juazeiro do Norte"],
-                    "DF": ["Brasília"],
-                    "ES": ["Vitória", "Vila Velha", "Serra"],
-                    "GO": ["Goiânia", "Aparecida de Goiânia", "Anápolis"],
-                    "MA": ["São Luís", "Imperatriz", "Timon"],
-                    "MT": ["Cuiabá", "Várzea Grande", "Rondonópolis"],
-                    "MS": ["Campo Grande", "Dourados", "Três Lagoas"],
-                    "MG": ["Belo Horizonte", "Uberlândia", "Contagem"],
-                    "PA": ["Belém", "Ananindeua", "Santarém"],
-                    "PB": ["João Pessoa", "Campina Grande", "Santa Rita"],
-                    "PR": ["Curitiba", "Londrina", "Maringá"],
-                    "PE": ["Recife", "Jaboatão dos Guararapes", "Olinda"],
-                    "PI": ["Teresina", "Parnaíba", "Picos"],
-                    "RJ": ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias"],
-                    "RN": ["Natal", "Mossoró", "Parnamirim"],
-                    "RS": ["Porto Alegre", "Caxias do Sul", "Pelotas"],
-                    "RO": ["Porto Velho", "Ji-Paraná", "Ariquemes"],
-                    "RR": ["Boa Vista", "Rorainópolis", "Caracaraí"],
-                    "SC": ["Florianópolis", "Joinville", "Blumenau"],
-                    "SP": ["São Paulo", "Campinas", "Santos"],
-                    "SE": ["Aracaju", "Nossa Senhora do Socorro", "Lagarto"],
-                    "TO": ["Palmas", "Araguaína", "Gurupi"],
-                };
-
-                const estadoSelect = document.getElementById("estado");
-                const cidadeSelect = document.getElementById("cidade");
-
-                estadoSelect.addEventListener("change", function() {
-                    const estado = this.value;
-                    const cidades = estadosECidades[estado] || [];
-
-                    cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>';
-
-                    cidades.forEach(cidade => {
-                        const option = document.createElement("option");
-                        option.value = cidade;
-                        option.textContent = cidade;
-                        cidadeSelect.appendChild(option);
-                    });
-                });
-            })
-        </script>
-
+        </div>
     </main>
 
+    <!-- ONDA DO FOOTER -->
+    <div>
+        <img class="onda full-width-img" src="/Luarce/Imagens/footer.svg" alt="">
+    </div>
+
     <!-- FOOTER -->
-<<<<<<< HEAD
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="footerLogo" src="/Luarce/Imagens/LogoRedonda.svg" alt="">
-                </div>
-                <div class="col-lg-4">
-                    <ul>
-                        <li><a href="/Luarce/index.html">Home</a></li>
-                        <li><a href="/Luarce/CATÁLOGO/Catalogo.html">Catálogo</a></li>
-                        <li><a href="/Luarce/GLOSSÁRIO/Glossario.html">Glossário</a></li>
-                        <li><a href="/Luarce/ERRO.html">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footerSocial">
-                        <a href="#"><img src="/Luarce/Imagens/Instagram.svg" alt="Instagram"></a>
-                        <a href="#"><img src="/Luarce/Imagens/WhatsApp.svg" alt="WhatsApp"></a>
-                        <a href="#"><img src="/Luarce/Imagens/Email.svg" alt="Email"></a>
-                        <a href="#"><img src="/Luarce/Imagens/TikTok.svg" alt="TikTok"></a>
-                    </div>
-                </div>
-=======
     <footer class="d-flex align-items-center">
 
         <h1 class="Direitos text-center">© 2024 Luarce. Todos os direitos reservados.</h1>
@@ -398,16 +257,104 @@
             </div>
             <div>
                 <!-- Logo do footer -->
-                <a href="/Luarce/"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
->>>>>>> dcf997d77f624a776f2625161750dce22735ca6e
+                <a href="/Luarce/index.html"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
             </div>
         </div>
+
     </footer>
 
-    <!-- Link dos scripts do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-lKNu4xjMNReTkbdyJCFd5II5DdzczdAE0p5E5FS8/muX+0S5WQzHe2xlgjz8DsrA"
-        crossorigin="anonymous"></script>
+    <!-- SCRIPT -->
+
+    <script>
+        // Função para fazer preload das imagens
+        function preloadImages(srcArray) {
+            srcArray.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+    
+        // Preload das imagens alternativas
+        preloadImages([
+            '/Luarce/Imagens/Favoritos2.svg',
+            '/Luarce/Imagens/Usuario2.svg',
+            '/Luarce/Imagens/Carrinho3.svg',
+        ]);
+    
+        // Funções para alterar imagem quando o cursor ficar sob a imagem
+        document.getElementById('favoritos-icon').addEventListener('mouseover', function() {
+            this.src = '/Luarce/Imagens/Favoritos2.svg';
+        });
+        document.getElementById('favoritos-icon').addEventListener('mouseout', function() {
+            this.src = '/Luarce/Imagens/Favoritos.svg';
+        });
+    
+        document.getElementById('usuario-icon').addEventListener('mouseover', function() {
+            this.src = '/Luarce/Imagens/Usuario2.svg';
+        });
+        document.getElementById('usuario-icon').addEventListener('mouseout', function() {
+            this.src = '/Luarce/Imagens/Usuario.svg';
+        });
+    
+        document.getElementById('carrinho-icon').addEventListener('mouseover', function() {
+            this.src = '/Luarce/Imagens/Carrinho3.svg';
+        });
+        document.getElementById('carrinho-icon').addEventListener('mouseout', function() {
+            this.src = '/Luarce/Imagens/Carrinho.svg';
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const estadosECidades = {
+                "AC": ["Rio Branco", "Cruzeiro do Sul", "Sena Madureira"],
+                "AL": ["Maceió", "Arapiraca", "Palmeira dos Índios"],
+                "AP": ["Macapá", "Santana", "Laranjal do Jari"],
+                "AM": ["Manaus", "Parintins", "Itacoatiara"],
+                "BA": ["Salvador", "Feira de Santana", "Vitória da Conquista"],
+                "CE": ["Fortaleza", "Caucaia", "Juazeiro do Norte"],
+                "DF": ["Brasília"],
+                "ES": ["Vitória", "Vila Velha", "Serra"],
+                "GO": ["Goiânia", "Aparecida de Goiânia", "Anápolis"],
+                "MA": ["São Luís", "Imperatriz", "Timon"],
+                "MT": ["Cuiabá", "Várzea Grande", "Rondonópolis"],
+                "MS": ["Campo Grande", "Dourados", "Três Lagoas"],
+                "MG": ["Belo Horizonte", "Uberlândia", "Contagem"],
+                "PA": ["Belém", "Ananindeua", "Santarém"],
+                "PB": ["João Pessoa", "Campina Grande", "Santa Rita"],
+                "PR": ["Curitiba", "Londrina", "Maringá"],
+                "PE": ["Recife", "Jaboatão dos Guararapes", "Olinda"],
+                "PI": ["Teresina", "Parnaíba", "Picos"],
+                "RJ": ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias"],
+                "RN": ["Natal", "Mossoró", "Parnamirim"],
+                "RS": ["Porto Alegre", "Caxias do Sul", "Pelotas"],
+                "RO": ["Porto Velho", "Ji-Paraná", "Ariquemes"],
+                "RR": ["Boa Vista", "Rorainópolis", "Caracaraí"],
+                "SC": ["Florianópolis", "Joinville", "Blumenau"],
+                "SP": ["São Paulo", "Campinas", "Santos"],
+                "SE": ["Aracaju", "Nossa Senhora do Socorro", "Lagarto"],
+                "TO": ["Palmas", "Araguaína", "Gurupi"],
+            };
+
+            const estadoSelect = document.getElementById("estado");
+            const cidadeSelect = document.getElementById("cidade");
+
+            estadoSelect.addEventListener("change", function() {
+                const estado = this.value;
+                const cidades = estadosECidades[estado] || [];
+
+                cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>';
+
+                cidades.forEach(cidade => {
+                    const option = document.createElement("option");
+                    option.value = cidade;
+                    option.textContent = cidade;
+                    cidadeSelect.appendChild(option);
+                });
+            });
+        });
+
+    </script>
+
+
 </body>
 
 </html>
