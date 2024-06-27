@@ -434,3 +434,22 @@ main {
     margin-bottom: 15px;
     width: calc(100% - 22px);
 }
+
+#confirmPaymentBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #555555;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: medium;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#confirmPaymentBtn:hover {
+    background-color: #777777;
+}
