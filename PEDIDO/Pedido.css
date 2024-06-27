@@ -1,4 +1,5 @@
-/* Estilos para o headerPedido */
+Esse é o css, atualize ele para ficar como o html
+
 .headerPedido {
     width: 100%;
     height: 138px;
@@ -8,13 +9,11 @@
     justify-content: space-evenly;
 }
 
-/* Estilos para infoPessoaish1 */
 .infoPessoaish1 {
     display: flex;
-    margin: 45px 0 17px 137px;
+    margin: 45px 0px 17px 137px;
 }
 
-/* Estilos para dNumeroUm */
 .dNumeroUm {
     display: flex;
     align-items: center;
@@ -26,16 +25,14 @@
     background-color: #555555;
 }
 
-/* Estilos para numeroUm */
 .numeroUm {
     color: white;
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 28px;
-    margin: 0;
+    margin: 0
 }
 
-/* Estilos para infoUm */
 .infoUm {
     color: #555555;
     font-family: 'Quicksand';
@@ -44,7 +41,6 @@
     margin-right: 10px;
 }
 
-/* Estilos para formPersonalData */
 .formPersonalData {
     background-color: #E2E1CC;
     width: 25%;
@@ -53,13 +49,11 @@
     border-radius: 5px;
 }
 
-/* Estilos para formPersonalData label */
 .formPersonalData label {
     color: #777777;
     font-family: 'Inter';
 }
 
-/* Estilos para formPersonalData input */
 .formPersonalData input {
     font-family: 'Open Sans';
     background-color: #FFFFFF;
@@ -70,24 +64,20 @@
     width: 100%;
 }
 
-/* Estilos para input:focus */
 input:focus {
     border-color: #111111;
     outline: none; /* Remove o outline padrão do navegador */
 }
 
-/* Estilos para input::placeholder */
 input::placeholder {
     color: rgba(0, 0, 0, 0.45);
 }
 
-/* Estilos para infoEntregash1 */
 .infoEntregash1 {
     display: flex;
-    margin: 45px 0 17px 137px;
+    margin: 45px 0px 17px 137px;
 }
 
-/* Estilos para dNumeroDois */
 .dNumeroDois {
     display: flex;
     align-items: center;
@@ -99,16 +89,14 @@ input::placeholder {
     background-color: #555555;
 }
 
-/* Estilos para numeroDois */
 .numeroDois {
     color: white;
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 28px;
-    margin: 0;
+    margin: 0
 }
 
-/* Estilos para infoDois */
 .infoDois {
     color: #555555;
     font-family: 'Quicksand';
@@ -117,7 +105,6 @@ input::placeholder {
     margin-right: 10px;
 }
 
-/* Estilos para formAddressData */
 .formAddressData {
     background-color: #E2E1CC;
     width: 25%;
@@ -126,13 +113,11 @@ input::placeholder {
     border-radius: 5px;
 }
 
-/* Estilos para formAddressData label */
 .formAddressData label {
     color: #777777;
     font-family: 'Inter';
 }
 
-/* Estilos para formAddressData input */
 .formAddressData input {
     font-family: 'Open Sans';
     background-color: #FFFFFF;
@@ -141,10 +126,8 @@ input::placeholder {
     padding: 5px;
     padding-left: 10px;
     width: 100%;
-}
+} 
 
-
-/* Estilos para formAddressData select */
 .formAddressData select {
     color: #777777;
     font-family: 'Open Sans';
@@ -154,15 +137,37 @@ input::placeholder {
     padding: 5px;
     padding-left: 10px;
     width: 100%;
+} 
+
+.infoPessoaish1 {
+    display: flex;
+    margin: 45px 0px 17px 137px;
 }
 
-/* Estilos para paymentMethodsh1 */
+.dNumeroUm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555555;
+}
+
+.numeroUm {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0
+}
+
 .paymentMethodsh1 {
     display: flex;
-    margin: 45px 0 17px 137px;
+    margin: 45px 0px 17px 137px;
 }
 
-/* Estilos para dNumberThree */
 .dNumberThree {
     display: flex;
     align-items: center;
@@ -174,16 +179,14 @@ input::placeholder {
     background-color: #555555;
 }
 
-/* Estilos para numberThree */
 .numberThree {
     color: white;
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 28px;
-    margin: 0;
+    margin: 0
 }
 
-/* Estilos para paymentTitle */
 .paymentTitle {
     color: #555555;
     font-family: 'Quicksand';
@@ -192,7 +195,6 @@ input::placeholder {
     margin-right: 10px;
 }
 
-/* Estilos para paymentButtons */
 .paymentButtons {
     background-color: #E2E1CC;
     width: 25%;
@@ -201,13 +203,11 @@ input::placeholder {
     border-radius: 5px;
 }
 
-/* Estilos para paymentButtons label */
 .paymentButtons label {
     color: #777777;
     font-family: 'Inter';
 }
 
-/* Estilos para paymentButtons input */
 .paymentButtons input {
     font-family: 'Open Sans';
     background-color: #FFFFFF;
@@ -218,44 +218,35 @@ input::placeholder {
     width: 100%;
 }
 
-/* Estilos para pix, debit, credit, paymentSlip */
-.pix,
-.debit,
-.credit,
-.paymentSlip {
+.pix, .debit, .credit, .paymentSlip {
     display: flex;
     justify-content: center;
 }
 
-/* Estilos para pix button, debit button, credit button, paymentSlip button */
-.pix button,
-.debit button,
-.credit button,
-.paymentSlip button {
+.pix button, .debit button, .credit button, .paymentSlip button {
     width: 50%;
     border-radius: 10px;
     border: none;
+
     font-family: 'Poppins';
     font-weight: medium;
     font-size: 20px;
     color: #514E4E;
+
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
     background-color: #F7F7EF;
 }
 
-/* Estilos para pix button:hover, debit button:hover, credit button:hover, paymentSlip button:hover */
-.pix button:hover,
-.debit button:hover,
-.credit button:hover,
-.paymentSlip button:hover {
+.pix button:hover, .debit button:hover , .credit button:hover , .paymentSlip button:hover {
     background-color: #777777;
     color: #FFFFFF;
 }
 
-/* Estilos para pixPercent */
 .pixPercent {
     display: flex;
     justify-content: center;
+
     font-family: 'Open Sans';
     font-weight: 900;
     font-size: 14px;
@@ -263,20 +254,18 @@ input::placeholder {
     margin-top: 4px;
 }
 
-/* Estilos gerais para links */
+
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; 
 }
 
-/* Estilos gerais para o corpo da página */
 body {
     background-color: #F7F6EF;
     width: 100%;
     margin: 0;
 }
 
-/* Estilos para Logo */
 .Logo {
     width: 190px;
     height: 47.93px;
@@ -284,7 +273,6 @@ body {
     margin-left: 50px;
 }
 
-/* Estilos para OpcoesHeader */
 .OpcoesHeader {
     margin-top: 65px;
     gap: 125px;
@@ -294,52 +282,44 @@ body {
     font-size: 18px;
 }
 
-/* Estilos para OpcoesHeader a:hover */
 .OpcoesHeader a:hover {
-    color: #C4C298;
+    color:#C4C298;
 }
 
-/* Estilos para SimbolosHeader */
 .SimbolosHeader {
     gap: 70px;
     padding-left: 310px;
 }
 
-/* Estilos para Favoritos */
 .Favoritos {
     width: 47px;
     height: 47px;
     margin-top: 54px;
 }
 
-/* Estilos para Usuario */
 .Usuario {
     width: 45px;
     height: 45px;
     margin-top: 56px;
 }
 
-/* Estilos para Carrinho */
 .Carrinho {
     width: 47px;
     height: 47px;
     margin-top: 55px;
 }
 
-/* Estilos para Carousel */
 .Carousel {
     width: 100%;
     height: 200px;
 }
 
-/* Estilos para onda */
 .onda {
     width: 100%;
     height: auto;
     background-color: #F7F6EF;
 }
 
-/* Estilos para footer */
 footer {
     background-color: #C4C298;
     width: 100%;
@@ -352,7 +332,6 @@ footer {
     margin-bottom: 0;
 }
 
-/* Estilos para Direitos */
 .Direitos {
     color: #E7E7E7;
     font-size: 17px;
@@ -361,13 +340,11 @@ footer {
     margin-bottom: 0px;
 }
 
-/* Estilos para ConteudoFooter */
 .ConteudoFooter {
     gap: 30px;
     justify-content: center;
 }
 
-/* Estilos para OpcoesFooter */
 .OpcoesFooter {
     gap: 100px;
     display: flex;
@@ -375,50 +352,44 @@ footer {
     color: white;
     font-size: 16px;
     padding-right: 30px;
+    
 }
 
-/* Estilos para vertical-line */
 .vertical-line {
     width: 1px;
     height: 22px;
     background-color: rgba(51, 51, 51, 0.2);
 }
 
-/* Estilos para SimbolosFooter */
 .SimbolosFooter {
     padding-left: 32px;
     padding-right: 50px;
 }
 
-/* Estilos para WhatsApp */
 .WhatsApp {
     width: 21px;
     height: 21px;
     margin-left: 45px;
 }
 
-/* Estilos para Instagram */
 .Instagram {
     width: 20px;
     height: 20px;
     margin-left: 45px;
 }
 
-/* Estilos para Tiktok */
 .Tiktok {
     width: 20px;
     height: 22.42px;
     margin-left: 45px;
 }
 
-/* Estilos para Email */
 .Email {
     width: 20px;
     height: 18.38px;
     margin-right: 16px;
 }
 
-/* Estilos para Gmail */
 .Gmail {
     padding-top: 4px;
     font-family: 'Roboto', sans-serif;
@@ -426,17 +397,18 @@ footer {
     font-size: 16px;
 }
 
-/* Estilos para LogoRedonda */
 .LogoRedonda {
     width: 90px;
     height: 90px;
     margin-bottom: 55px;
+    
 }
 
-.body_purchase {
-    display: flex;
-}
-
-.hiddenForm {
-    display: none;
+/* AQUI PODE ALTERAR O "height" DO MAIN PARA COMPORTAR O CONTEUDO DA PÁGINA
+   429px é só o tamanho da tela no navegador FireFox, e 456px é o do Chrome 
+  (lembrando que isso é pra tela do computador, não sei se muda no de vocês) */
+main {
+    background-color: #F7F6EF;
+    width: 100%;
+    height: 100%;
 }
