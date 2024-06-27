@@ -72,26 +72,32 @@
 
     </header>
 
-    <main>
+    <main class="container mt-4">
+        <h2 class="mb-3">Carrinho de Compras</h2>
         
-        <!-- Altere somente o main, o resto pode deixar quieto que faz parte da header e do footer (sim, bastante coisa) -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Preço</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- as linhas da tabela vão sendo adicionadas de forma dinamica aqui conforme o usuário escolhe mais itens -->
+            </tbody>
+        </table>
 
-        <!-- INSTRUÇÕES PARA ESSA PÁGINA: -->
-
-        <!-- 1 Não esquecer de salvar os produtos e calcular o preço total -->
-          <!-- 2 Se o usuário digitar um CEP, colocar lógica com javascript de se for 88300-001 à 88319-999 ou seja, for de itajaí, o valor é R$ 11,99 fixo, e para qualquer outro CEP fora desse espectro é 21,99 -->
-            <!-- 3 Se o usuário clicar em "Continuar comprando" direcione para página do Home (/HOME/Home.html) -->
-             <!-- 4 tentar controlar o que o usuário digita no cep, tipo não permitir que escreva mais que 8 caracteres, permitir somente números, não deixar submeter sem ter no minimo e maximo 8 carcteres -->
-               <!-- 5 Se der tente preencher automaticamente para o usuário o tracinho do final do CEP "-", antes dos 2 últimos números-->
-
+        <div class="total text-end">
+            <h4>Total: <span id="totalPrice">R$ 0,00</span></h4>
+            <a href="Pedido.html" class="btn btn-primary">Fechar Pedido</a>
+        </div>
     </main>
 
-    <!-- ONDA DO FOOTER -->
     <div>
         <img class="onda full-width-img" src="/Luarce/Imagens/footer.svg" alt="">
     </div>
 
-    <!-- FOOTER -->
     <footer class="d-flex align-items-center">
 
         <h1 class="Direitos text-center">© 2024 Luarce. Todos os direitos reservados.</h1>
@@ -104,7 +110,7 @@
                 <a href="/Luarce/ERRO.html">Suporte</a>
             </div>
             <div class="vertical-line"></div>
-            <!-- Links das redes -->
+
             <div class="d-flex SimbolosFooter">
                 <a><img class="Email" src="/Luarce/Imagens/Email.svg" alt=""></a>
                 <a class="Gmail">Luarce@gmail.com</a>
@@ -113,7 +119,7 @@
                 <a href="https://api.whatsapp.com/send/?phone=554792072003&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img class="WhatsApp" src="/Luarce/Imagens/WhatsApp.svg" alt=""></a>
             </div>
             <div>
-                <!-- Logo do footer -->
+
                 <a href="/Luarce/HOME/index.html"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
             </div>
         </div>

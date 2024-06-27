@@ -16,6 +16,20 @@ body {
     margin: 0;
 }
 
+.btn-primary {
+    background-color: #C4C298;
+    color: #ffffff;  
+    padding: 10px 20px;  
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #B3AE8F;
+    transition: background-color 0.3s ease;
+}
+
 .Logo {
     width: 190px;
     height: 47.93px;
