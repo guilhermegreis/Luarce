@@ -141,31 +141,31 @@
     
         // Preload das imagens alternativas
         preloadImages([
-            '/Imagens/Favoritos2.svg',
-            '/Imagens/Usuario2.svg',
-            '/Imagens/Carrinho3.svg',
+            "/Imagens/Favoritos2.svg",
+            "/Imagens/Usuario2.svg",
+            "/Imagens/Carrinho3.svg",
         ]);
     
         // Funções para alterar imagem quando o cursor ficar sob a imagem
-        document.getElementById('favoritos-icon').addEventListener('mouseover', function() {
-            this.src = '/Imagens/Favoritos2.svg';
+        document.getElementById("favoritos-icon").addEventListener("mouseover", function() {
+            this.src = "/Imagens/Favoritos2.svg";
         });
-        document.getElementById('favoritos-icon').addEventListener('mouseout', function() {
-            this.src = '/Imagens/Favoritos.svg';
-        });
-    
-        document.getElementById('usuario-icon').addEventListener('mouseover', function() {
-            this.src = '/Imagens/Usuario2.svg';
-        });
-        document.getElementById('usuario-icon').addEventListener('mouseout', function() {
-            this.src = '/Imagens/Usuario.svg';
+        document.getElementById("favoritos-icon").addEventListener("mouseout", function() {
+            this.src = "/Imagens/Favoritos.svg";
         });
     
-        document.getElementById('carrinho-icon').addEventListener('mouseover', function() {
-            this.src = '/Imagens/Carrinho3.svg';
+        document.getElementById("usuario-icon").addEventListener("mouseover", function() {
+            this.src = "/Imagens/Usuario2.svg";
         });
-        document.getElementById('carrinho-icon').addEventListener('mouseout', function() {
-            this.src = '/Imagens/Carrinho.svg';
+        document.getElementById("usuario-icon").addEventListener("mouseout", function() {
+            this.src = "/Imagens/Usuario.svg";
+        });
+    
+        document.getElementById("carrinho-icon").addEventListener("mouseover", function() {
+            this.src = "/Imagens/Carrinho3.svg";
+        });
+        document.getElementById("carrinho-icon").addEventListener("mouseout", function() {
+            this.src = "/Imagens/Carrinho.svg";
         });
 
     </script>
