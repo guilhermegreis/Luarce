@@ -67,9 +67,9 @@
     <header class="d-flex hide" >
 
         <!-- Logo Principal -->
-        <a href="/Luarce/index.html"><img class="Logo" src="/Luarce/Imagens/Logo.svg" alt=""></a>
+        <a href="/Luarce/"><img class="Logo" src="/Luarce/Imagens/Logo.svg" alt=""></a>
         <div class="d-flex OpcoesHeader">
-            <a href="/Luarce/index.html">Home</a>
+            <a href="/Luarce/">Home</a>
             <a href="/Luarce/CATÁLOGO/Catalogo.html">Catálogo</a>
             <a href="/Luarce/GLOSSÁRIO/Glossario.html">Glossário</a>
             <a href="/Luarce/ERRO.html">Blog</a>
@@ -91,9 +91,9 @@
 
         <section class="PagamentoStatus">
 
-        <h1><a href="/Luarce/index.html"><img class="LogoColorida" src="/Luarce/imagens/LogoColorida.svg" alt=""></a>Obrigada por fazer parte da nossa história! </h1>
+        <h1><a href="/Luarce/"><img class="LogoColorida" src="/Luarce/imagens/LogoColorida.svg" alt=""></a>Obrigada por fazer parte da nossa história! </h1>
 
-        <a href="/Luarce/index.html"><p>Voltar para o Home</p></a>
+        <a href="/Luarce/"><p>Voltar para o Home</p></a>
 
         </section>
 
@@ -127,7 +127,7 @@
             </div>
             <div>
                 <!-- Logo do footer -->
-                <a href="/Luarce/index.html"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
+                <a href="/Luarce/"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
             </div>
         </div>
 
@@ -146,31 +146,31 @@
     
         // Preload das imagens alternativas
         preloadImages([
-            '/Luarce/Imagens/Favoritos2.svg',
-            '/Luarce/Imagens/Usuario2.svg',
-            '/Luarce/Imagens/Carrinho3.svg',
+            "/Luarce/Imagens/Favoritos2.svg",
+            "/Luarce/Imagens/Usuario2.svg",
+            "/Luarce/Imagens/Carrinho3.svg",
         ]);
     
         // Funções para alterar imagem quando o cursor ficar sob a imagem
-        document.getElementById('favoritos-icon').addEventListener('mouseover', function() {
-            this.src = '/Luarce/Imagens/Favoritos2.svg';
+        document.getElementById("favoritos-icon").addEventListener("mouseover", function() {
+            this.src = "/Luarce/Imagens/Favoritos2.svg";
         });
-        document.getElementById('favoritos-icon').addEventListener('mouseout', function() {
-            this.src = '/Luarce/Imagens/Favoritos.svg';
-        });
-    
-        document.getElementById('usuario-icon').addEventListener('mouseover', function() {
-            this.src = '/Luarce/Imagens/Usuario2.svg';
-        });
-        document.getElementById('usuario-icon').addEventListener('mouseout', function() {
-            this.src = '/Luarce/Imagens/Usuario.svg';
+        document.getElementById("favoritos-icon").addEventListener("mouseout", function() {
+            this.src = "/Luarce/Imagens/Favoritos.svg";
         });
     
-        document.getElementById('carrinho-icon').addEventListener('mouseover', function() {
-            this.src = '/Luarce/Imagens/Carrinho3.svg';
+        document.getElementById("usuario-icon").addEventListener("mouseover", function() {
+            this.src = "/Luarce/Imagens/Usuario2.svg";
         });
-        document.getElementById('carrinho-icon').addEventListener('mouseout', function() {
-            this.src = '/Luarce/Imagens/Carrinho.svg';
+        document.getElementById("usuario-icon").addEventListener("mouseout", function() {
+            this.src = "/Luarce/Imagens/Usuario.svg";
+        });
+    
+        document.getElementById("carrinho-icon").addEventListener("mouseover", function() {
+            this.src = "/Luarce/Imagens/Carrinho3.svg";
+        });
+        document.getElementById("carrinho-icon").addEventListener("mouseout", function() {
+            this.src = "/Luarce/Imagens/Carrinho.svg";
         });
 
     </script>
