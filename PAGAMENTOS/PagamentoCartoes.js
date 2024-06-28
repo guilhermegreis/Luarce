@@ -68,11 +68,11 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(()=>{
             //COMO TESTE, SE O CAMPO NOME FOR "Luarce" REDIRECIONA PARA PAGINA DE ERRO
             if(name_.value == "Luarce"){
-                window.location.href = "PagamentoErro.html"
+                window.location.href = "PagamentoErro"
                 return
             }
 
-            window.location.href = "PagamentoAprovado.html"
+            window.location.href = "PagamentoAprovado"
         }, 2000+Math.random()*2000)
     })
 })

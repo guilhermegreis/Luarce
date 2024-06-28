@@ -242,17 +242,59 @@ main {
 }
 
 
-
 /*-------------------------------------------------------- CSS que pertence a Pagamento Pix: ------------------------------------------------------------------------*/
 
 #PagamentoPix-main {
-    height: 1000px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#payment-pix a {
+    font-weight: bold;
+    font-size: 25px;
+    color: #505050;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom:15px;
+}
+#payment-pix img {
+    margin-bottom:15px;
 }
 
 /*-------------------------------------------------------- CSS que pertence a Pagamento Boleto: ------------------------------------------------------------------------*/
 
 #PagamentoBoleto-main {
-    height: 1000px;
+    min-height: 100%;
+    height: 1100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-payment{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-payment div{
+    display: flex;
+    flex-direction: column;
+}
+
+#download-boleto{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+}
+
+#download-boleto:hover{
+    text-decoration: underline;
 }
 
 /*-------------------------------------------------------- CSS que pertence a Pagamento Debito e Credito: -------------------------------------------------------------*/
@@ -354,7 +396,7 @@ input::placeholder {
     background-color: #666666;
 }
 
-#awaiting-payment {
+#awaiting-payment-hidden {
     display: none;
 }
 
