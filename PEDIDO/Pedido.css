@@ -234,6 +234,14 @@ input::placeholder {
 }
 
 .pix, .debit, .credit, .paymentSlip {
+    font-family: 'Open Sans';
+    background-color: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+    
     display: flex;
     width: 50%;
     border-radius: 10px;
