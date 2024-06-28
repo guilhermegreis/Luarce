@@ -198,36 +198,25 @@
                     </div>
                     <div class="paymentButtons">
                         <div class="pix">
-                            <button id="pixBtn">Pix</button>
+                            <a href="/Luarce/PAGAMENTOS/PagamentoPix" id="pixBtn">Pix</a>
                         </div>
                         <div class="pixPercent">
                             <p>10% no PIX</p>
                         </div>
                         <br>
                         <div class="debit">
-                            <button id="debitBtn" type="button">Débito</button>
+                            <a href="/Luarce/PAGAMENTOS/PagamentoDebito" id="debitBtn" type="button">Débito</a>
                         </div>
                         <br>
                         <div class="credit">
-                            <button id="creditBtn" type="button">Crédito</button>
+                            <a href="/Luarce/PAGAMENTOS/PagamentoCredito" id="creditBtn" type="button">Crédito</a>
                         </div>
                         <br>
                         <div class="paymentSlip">
-                            <button>Boleto</button>
+                            <a href="/Luarce/PAGAMENTOS/PagamentoBoleto">Boleto</a>
                         </div>
                     </div>
                     <br>
-                    <div class="cardDetails" id="cardDetails" style="display: none;">
-                        <label for="cardNumber">Número do Cartão</label>
-                        <input type="text" id="cardNumber" maxlength="12">
-                        <label for="cardName">Nome no Cartão</label>
-                        <input type="text" id="cardName">
-                        <label for="cardCVC">CVC</label>
-                        <input type="text" id="cardCVC" maxlength="3">
-                        <label for="cardExpiry">Data de Validade (MM/AA)</label>
-                        <input type="text" id="cardExpiry" placeholder="MM/AA">
-                        <button id="confirmPaymentBtn">Confirmar Pagamento</button>
-                    </div>
             </div>
         </div>
     </main>
@@ -277,20 +266,6 @@
                 img.src = src;
             });
         }
-
-        document.addEventListener("DOMContentLoaded", function () {
-        const debitBtn = document.getElementById('debitBtn');
-        const creditBtn = document.getElementById('creditBtn');
-        const cardDetails = document.getElementById('cardDetails');
-
-        debitBtn.addEventListener('click', function () {
-            cardDetails.style.display = 'block';
-        });
-
-        creditBtn.addEventListener('click', function () {
-            cardDetails.style.display = 'block';
-        });
-    });
     
         // Preload das imagens alternativas
         preloadImages([
