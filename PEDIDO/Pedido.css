@@ -221,6 +221,18 @@ input::placeholder {
     width: 100%;
 }
 
+.pix a, .debit a, .credit a, .paymentSlip a {
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: medium;
+    font-size: 20px;
+    color: #514E4E;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #F7F7EF;
+}
+
 .pix, .debit, .credit, .paymentSlip {
     display: flex;
     width: 50%;
@@ -240,7 +252,7 @@ input::placeholder {
     align-items: center;
 }
 
-.pix button:hover, .debit button:hover , .credit button:hover , .paymentSlip button:hover {
+.pix:hover, .debit:hover , .credit:hover , .paymentSlip:hover {
     background-color: #777777;
     color: #FFFFFF;
 }
