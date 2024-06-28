@@ -81,3 +81,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updatePrice();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    let quantity = 1;
+    const quantityDisplay = document.getElementById('quantity');
+    const increaseButton = document.getElementById('increase');
+    const decreaseButton = document.getElementById('decrease');
+
+    increaseButton.addEventListener('click', () => {
+        quantity += 1;
+        quantityDisplay.textContent = quantity;
+    });
+
+    decreaseButton.addEventListener('click', () => {
+        if (quantity > 1) {
+            quantity -= 1;
+            quantityDisplay.textContent = quantity;
+        }
+    });
+
+    function addToCart(product) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const existingProductIndex = cart.findIndex(item => item.id === product.id && item.pavio === product.pavio && item.tamanho === product.tamanho);
+
+        if (existingProductIndex !== -1) {
+            cart[existingProductIndex].quantity += product.quantity;
+        } else {
+            cart.push(product);
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Produto adicionado ao carrinho');
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedPavio = document.querySelector('input[name="pavio"]:checked').nextElementSibling.textContent;
+            const selectedTamanho = document.querySelector('input[name="volume"]:checked').nextElementSibling.textContent;
+
+            const product = {
+                id: button.getAttribute('data-id'),
+                name: button.getAttribute('data-name'),
+                price: parseFloat(button.getAttribute('data-price')),
+                tamanho: selectedTamanho,
+                pavio: selectedPavio,
+                quantity: quantity
+            };
+
+            addToCart(product);
+        });
+    });
+});

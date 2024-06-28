@@ -31,7 +31,7 @@
     <link rel="icon" href="/Luarce/Imagens/FAVICON/FAVICON128X128.ico" sizes="128x128" type="image/x-ico">
     <link rel="icon" href="/Luarce/Imagens/FAVICON/FAVICON256X256.ico" sizes="256x256" type="image/x-ico">
     <!-- Link do .CSS da página -->
-    <link rel="stylesheet" href="Carrinho.css">
+    <link rel="stylesheet" href="/Luarce/CARRINHO/Carrinho.css">
 
     <link rel="preload" href="/Luarce/Imagens/Logo.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/Favoritos.svg" as="image">
@@ -40,6 +40,7 @@
     <link rel="preload" href="/Luarce/Imagens/Favoritos2.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/Usuario2.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/Carrinho3.svg" as="image">
+    <link rel="preload" href="/Luarce/Imagens/CarrinhoCarrinho.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/Logo_Carousel.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/footer.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/LogoRedonda.svg" as="image">
@@ -49,6 +50,7 @@
     <link rel="preload" href="/Luarce/Imagens/Email.svg" as="image">
     <link rel="preload" href="/Luarce/Imagens/TikTok.svg" as="image">
 
+
 </head>
 
 <body>
@@ -57,9 +59,9 @@
     <header class="d-flex hide" >
 
         <!-- Logo Principal -->
-        <a href="/Luarce/index.html"><img class="Logo" src="/Luarce/Imagens/Logo.svg" alt=""></a>
+        <a href="/Luarce/index.html"><img class="Logo" src="/Luarce/Imagens/Logo.svg" alt="Logo"></a>
         <div class="d-flex OpcoesHeader">
-            <a href="/Luarce/HOME/index.html">Home</a>
+            <a href="/Luarce/index.html">Home</a>
             <a href="/Luarce/CATÁLOGO/Catalogo.html">Catálogo</a>
             <a href="/Luarce/GLOSSÁRIO/Glossario.html">Glossário</a>
             <a href="/Luarce/ERRO.html">Blog</a>
@@ -72,32 +74,50 @@
 
     </header>
 
-    <main class="container mt-4">
-        <h2 class="mb-3">Carrinho de Compras</h2>
-        
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Produto</th>
-                    <th scope="col">Quantidade</th>
-                    <th scope="col">Preço</th>
-                </tr>
-            </thead>
-            <tbody id="cart-body">
-                <!-- as linhas da tabela vão sendo adicionadas de forma dinamica aqui conforme o usuário escolhe mais itens -->
-            </tbody>
-        </table>
-
-        <div class="total text-end">
-            <h4>Total: <span id="totalPrice">R$ 0,00</span></h4>
-            <a href="Pedido.html" class="btn btn-primary">Fechar Pedido</a>
+    <main id="main-content">
+        <div class="paginas">
+            <a href="/Luarce/index.html">Home</a>
+            <p class="setaDireita2">></p> 
+            <p class="pgAtual"><a href="/Luarce/CARRINHO/Carrinho.html">Carrinho</a></p>
         </div>
+        <section class="Produto-con">
+            <h1>Carrinho</h1>
+            <div class="Produto-esq">
+                <div class="JanelaProdutos" id="product-window">
+                    <h2 class="produtoTitulo">Produtos</h2>
+                    <div class="Products"></div>
+                    <a href="/Luarce/index.html" class="continuar">Continuar comprando</a>
+                </div>
+            </div>
+            <div class="Produto-dir">
+                <div class="JanelaFinalizar">
+                    <h2 class="estipularFrete">Estipular frete</h2>
+                    <div class="adentro">
+                        <div class="d-flex CEP-control">
+                            <input id="CEP" required placeholder="CEP (XXXXX-XXX)">
+                            <div class="Calcular"><button>Calcular</button></div>
+                        </div>
+                        <div class="horizontal-line-container">
+                            <div id="hl2" class="horizontal-line"></div>
+                        </div>
+                        <div class="Frete" id="FreteMessage"></div>
+                        <div class="Total">
+                            <h5>Total:</h5>
+                            <h5 id="Num">R$ 0,00</h5>
+                        </div>
+                        <a class="Finalizar" id="finalizar-button" href="/Luarce/PEDIDO/Pedido.html">Finalizar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- ONDA DO FOOTER -->
     <div>
         <img class="onda full-width-img" src="/Luarce/Imagens/footer.svg" alt="">
     </div>
 
+    <!-- FOOTER -->
     <footer class="d-flex align-items-center">
 
         <h1 class="Direitos text-center">© 2024 Luarce. Todos os direitos reservados.</h1>
@@ -110,17 +130,17 @@
                 <a href="/Luarce/ERRO.html">Suporte</a>
             </div>
             <div class="vertical-line"></div>
-
+            <!-- Links das redes -->
             <div class="d-flex SimbolosFooter">
-                <a><img class="Email" src="/Luarce/Imagens/Email.svg" alt=""></a>
+                <a><img class="Email" src="/Luarce/Imagens/Email.svg" alt="Email"></a>
                 <a class="Gmail">Luarce@gmail.com</a>
-                <a href="https://www.instagram.com/luarcevelas/" target="_blank" rel="noopener noreferrer"><img class="Instagram" src="/Luarce/Imagens/Instagram.svg" alt=""></a>
-                <a href="https://www.tiktok.com/@luarcevelas" target="_blank" rel="noopener noreferrer"><img class="Tiktok" src="/Luarce/Imagens/TikTok.svg" alt=""></a>
-                <a href="https://api.whatsapp.com/send/?phone=554792072003&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img class="WhatsApp" src="/Luarce/Imagens/WhatsApp.svg" alt=""></a>
+                <a href="https://www.instagram.com/luarcevelas/" target="_blank" rel="noopener noreferrer"><img class="Instagram" src="/Luarce/Imagens/Instagram.svg" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@luarcevelas" target="_blank" rel="noopener noreferrer"><img class="Tiktok" src="/Luarce/Imagens/TikTok.svg" alt="TikTok"></a>
+                <a href="/Luarce/ERRO.html" target="_blank" rel="noopener noreferrer"><img class="WhatsApp" src="/Luarce/Imagens/WhatsApp.svg" alt="WhatsApp"></a>
             </div>
             <div>
-
-                <a href="/Luarce/HOME/index.html"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
+                <!-- Logo do footer -->
+                <a href="/Luarce/index.html"><img class="LogoRedonda" src="/Luarce/Imagens/LogoRedonda.svg" alt=""></a>
             </div>
         </div>
 
@@ -165,9 +185,156 @@
 
     </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let frete = 0; // Variável global para armazenar o valor do frete
+        const productsContainer = document.querySelector('.Products');
+        const mainContent = document.querySelector('main');
+        const productWindow = document.querySelector('.JanelaProdutos');
+        const cepInput = document.getElementById('CEP');
+        const calcularButton = document.querySelector('.Calcular button');
+        const freteMessage = document.getElementById('FreteMessage');
+        const janelaFinalizar = document.querySelector('.JanelaFinalizar');
+        const finalizarButton = document.getElementById('finalizar-button');
+        
+        const updateCart = () => {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            const total = cart.reduce((sum, product) => sum + (product.price * product.quantity), 0) + frete;
+            document.getElementById('Num').textContent = `R$ ${total.toFixed(2)}`;
+            adjustHeights();
+            toggleFinalizarButton();
+        };
+    
+        const adjustHeights = () => {
+            const productCount = cart.length;
+            if (productCount === 0) {
+                mainContent.style.height = '620px';
+                productWindow.style.height = '475px';
+            } else {
+                const mainHeight = 470 + (productCount * 130);
+                const productWindowHeight = 145 + (productCount * 195);
+    
+                mainContent.style.height = `${mainHeight}px`;
+                productWindow.style.height = `${productWindowHeight}px`;
+            }
+        };
+    
+        const renderCart = () => {
+            productsContainer.innerHTML = '';
+            if (cart.length === 0) {
+                productsContainer.innerHTML = ` <div class="Vazio">
+                                                    <img id="CarrinhoCarrinho" src="/Luarce/Imagens/CarrinhoCarrinho.svg" alt="Carrinho">
+                                                    <p id="MensagemCarrinho"> Parece que seu carrinho ainda<br>está vazio...</p> 
+                                                </div>
+                                                <div class="horizontal-line-container">
+                                                    <div class="horizontal-line"></div>
+                                                </div>
+                                              `;
+            } else {
+                cart.forEach((product, index) => {
+                    const productCard = `
+                        <div class="product-card">
+                            <img class="imgProduto" src="/Luarce/Imagens/270X270_Vanilla.svg">
+                            <div class="infos">
+                                <h3>${product.name}</h3>
+                                <div class="Descricao">
+                                    <p>Tamanho: ${product.tamanho}</p>
+                                    <p>Pavio: ${product.pavio}</p>
+                                </div>
+                                <div class="QtdNum"> 
+                                    <div class="arrow" id="arrow" data-index="${index}" data-action="decrease"><</div>
+                                    <div>${product.quantity}x</div>
+                                    <div class="arrow" id="arrow" data-index="${index}" data-action="increase">></div>
+                                    <h4>R$ ${(product.price * product.quantity).toFixed(2)}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-line-container">
+                            <div class="horizontal-line"></div>
+                        </div>
+                    `;
+                    productsContainer.insertAdjacentHTML('beforeend', productCard);
+                });
+            }
+            attachEventListeners();
+            adjustHeights();
+        };
+    
+        const attachEventListeners = () => {
+            document.querySelectorAll('.arrow').forEach(arrow => {
+                arrow.addEventListener('click', (e) => {
+                    const index = e.target.dataset.index;
+                    const action = e.target.dataset.action;
+                    if (action === 'decrease') {
+                        if (cart[index].quantity > 1) {
+                            cart[index].quantity -= 1;
+                        } else {
+                            cart.splice(index, 1);
+                        }
+                    } else if (action === 'increase') {
+                        cart[index].quantity += 1;
+                    }
+                    updateCart();
+                    renderCart();
+                });
+            });
+        };
+    
+        const formatCEP = (cep) => {
+            return cep.replace(/^(\d{5})(\d{3})$/, '$1-$2');
+        };
+    
+        const validateCEP = (cep) => {
+            return /^\d{5}-\d{3}$/.test(cep);
+        };
+    
+        const calcularFrete = () => {
+            const cep = cepInput.value;
+            if (!validateCEP(cep)) {
+                alert('Por favor, insira um CEP válido com 8 caracteres.');
+                return;
+            }
+            const cepNumero = parseInt(cep.replace('-', ''), 10);
+            if (cepNumero >= 88000000 && cepNumero <= 89999999) {
+                freteMessage.innerHTML = '<h5>Frete: R$ 15,00</h5>';
+                frete = 15.00;
+            } else {
+                freteMessage.innerHTML = '<h5>Frete: R$ 30,00</h5>';
+                frete = 30.00;
+            }
+            updateCart();
+            ajustarJanelaFinalizar();
+        };
+    
+        const ajustarJanelaFinalizar = () => {
+            janelaFinalizar.style.height = `${janelaFinalizar.offsetHeight + 20}px`;
+        };
+    
+        const toggleFinalizarButton = () => {
+            if (cart.length === 0) {
+                finalizarButton.classList.add('disabled');
+                finalizarButton.removeAttribute('href');
+            } else {
+                finalizarButton.classList.remove('disabled');
+                finalizarButton.setAttribute('href', '/Luarce/PEDIDO/Pedido.html');
+            }
+        };
+    
+        cepInput.addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 5) {
+                value = value.slice(0, 5) + '-' + value.slice(5, 8);
+            }
+            e.target.value = value;
+        });
+    
+        calcularButton.addEventListener('click', calcularFrete);
+    
+        renderCart();
+        updateCart();
+    });
+    </script>
 
 </body>
-
-<script src="Carrinho.js"></script>
-
 </html>

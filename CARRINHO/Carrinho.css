@@ -16,469 +16,9 @@ body {
     margin: 0;
 }
 
-.btn-primary {
-    background-color: #C4C298;
-    color: #ffffff;  
-    padding: 10px 20px;  
-    text-decoration: none;
-    border-radius: 5px; 
-    transition: background-color 0.3s ease;
-    border-color: #E2E1CC;
-}
-
-.btn-primary:hover {
-    background-color: #B3AE8F;
-    border-color:#B3AE8F ;
-    transition: background-color 0.3s ease;
-}
-
-.Logo {
-    width: 190px;
-    height: 47.93px;/* Estilos para o headerPedido */
-.headerPedido {
-    width: 100%;
-    height: 138px;
-    background-color: white;
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* Estilos para infoPessoaish1 */
-.infoPessoaish1 {
-    display: flex;
-    margin: 45px 0 17px 137px;
-}
-
-/* Estilos para dNumeroUm */
-.dNumeroUm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #555555;
-}
-
-/* Estilos para numeroUm */
-.numeroUm {
-    color: white;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 28px;
-    margin: 0;
-}
-
-/* Estilos para infoUm */
-.infoUm {
-    color: #555555;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-/* Estilos para formPersonalData */
-.formPersonalData {
-    background-color: #E2E1CC;
-    width: 25%;
-    margin-left: 137px;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-/* Estilos para formPersonalData label */
-.formPersonalData label {
-    color: #777777;
-    font-family: 'Inter';
-}
-
-/* Estilos para formPersonalData input */
-.formPersonalData input {
-    font-family: 'Open Sans';
-    background-color: #FFFFFF;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    width: 100%;
-}
-
-/* Estilos para input:focus */
-input:focus {
-    border-color: #111111;
-    outline: none; /* Remove o outline padrão do navegador */
-}
-
-/* Estilos para input::placeholder */
-input::placeholder {
-    color: rgba(0, 0, 0, 0.45);
-}
-
-/* Estilos para infoEntregash1 */
-.infoEntregash1 {
-    display: flex;
-    margin: 45px 0 17px 137px;
-}
-
-/* Estilos para dNumeroDois */
-.dNumeroDois {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #555555;
-}
-
-/* Estilos para numeroDois */
-.numeroDois {
-    color: white;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 28px;
-    margin: 0;
-}
-
-/* Estilos para infoDois */
-.infoDois {
-    color: #555555;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-/* Estilos para formAddressData */
-.formAddressData {
-    background-color: #E2E1CC;
-    width: 25%;
-    margin-left: 137px;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-/* Estilos para formAddressData label */
-.formAddressData label {
-    color: #777777;
-    font-family: 'Inter';
-}
-
-/* Estilos para formAddressData input */
-.formAddressData input {
-    font-family: 'Open Sans';
-    background-color: #FFFFFF;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    width: 100%;
-}
-
-/* Estilos para formAddressData select */
-.formAddressData select {
-    color: #777777;
-    font-family: 'Open Sans';
-    background-color: #FFFFFF;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    width: 100%;
-}
-
-/* Estilos para paymentMethodsh1 */
-.paymentMethodsh1 {
-    display: flex;
-    margin: 45px 0 17px 137px;
-}
-
-/* Estilos para dNumberThree */
-.dNumberThree {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #555555;
-}
-
-/* Estilos para numberThree */
-.numberThree {
-    color: white;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 28px;
-    margin: 0;
-}
-
-/* Estilos para paymentTitle */
-.paymentTitle {
-    color: #555555;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-/* Estilos para paymentButtons */
-.paymentButtons {
-    background-color: #E2E1CC;
-    width: 25%;
-    margin-left: 137px;
-    padding: 20px;
-    border-color: #E2E1CC;
-    border-radius: 5px;
-}
-
-/* Estilos para paymentButtons label */
-.paymentButtons label {
-    color: #777777;
-    font-family: 'Inter';
-}
-
-/* Estilos para paymentButtons input */
-.paymentButtons input {
-    font-family: 'Open Sans';
-    background-color: #FFFFFF;
-    border: 1px solid #BDBDBD;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-    width: 100%;
-}
-
-/* Estilos para pix, debit, credit, paymentSlip */
-.pix,
-.debit,
-.credit,
-.paymentSlip {
-    display: flex;
-    justify-content: center;
-}
-
-/* Estilos para pix button, debit button, credit button, paymentSlip button */
-.pix button,
-.debit button,
-.credit button,
-.paymentSlip button {
-    width: 50%;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Poppins';
-    font-weight: medium;
-    font-size: 20px;
-    color: #514E4E;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    background-color: #F7F7EF;
-}
-
-/* Estilos para pix button:hover, debit button:hover, credit button:hover, paymentSlip button:hover */
-.pix button:hover,
-.debit button:hover,
-.credit button:hover,
-.paymentSlip button:hover {
-    background-color: #777777;
-    color: #FFFFFF;
-}
-
-/* Estilos para pixPercent */
-.pixPercent {
-    display: flex;
-    justify-content: center;
-    font-family: 'Open Sans';
-    font-weight: 900;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
-    margin-top: 4px;
-}
-
-/* Estilos gerais para links */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Estilos gerais para o corpo da página */
-body {
-    background-color: #F7F6EF;
-    width: 100%;
-    margin: 0;
-}
-
-/* Estilos para Logo */
 .Logo {
     width: 190px;
     height: 47.93px;
-    margin-top: 46px;
-    margin-left: 50px;
-}
-
-/* Estilos para OpcoesHeader */
-.OpcoesHeader {
-    margin-top: 65px;
-    gap: 125px;
-    padding-left: 390px;
-    font-family: 'Poppins', sans-serif;
-    color: #514E4E;
-    font-size: 18px;
-}
-
-/* Estilos para OpcoesHeader a:hover */
-.OpcoesHeader a:hover {
-    color: #C4C298;
-}
-
-/* Estilos para SimbolosHeader */
-.SimbolosHeader {
-    gap: 70px;
-    padding-left: 310px;
-}
-
-/* Estilos para Favoritos */
-.Favoritos {
-    width: 47px;
-    height: 47px;
-    margin-top: 54px;
-}
-
-/* Estilos para Usuario */
-.Usuario {
-    width: 45px;
-    height: 45px;
-    margin-top: 56px;
-}
-
-/* Estilos para Carrinho */
-.Carrinho {
-    width: 47px;
-    height: 47px;
-    margin-top: 55px;
-}
-
-/* Estilos para Carousel */
-.Carousel {
-    width: 100%;
-    height: 200px;
-}
-
-/* Estilos para onda */
-.onda {
-    width: 100%;
-    height: auto;
-    background-color: #F7F6EF;
-}
-
-/* Estilos para footer */
-footer {
-    background-color: #C4C298;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 0;
-}
-
-/* Estilos para Direitos */
-.Direitos {
-    color: #E7E7E7;
-    font-size: 17px;
-    font-weight: 500;
-    padding-top: 41px;
-    margin-bottom: 0px;
-}
-
-/* Estilos para ConteudoFooter */
-.ConteudoFooter {
-    gap: 30px;
-    justify-content: center;
-}
-
-/* Estilos para OpcoesFooter */
-.OpcoesFooter {
-    gap: 100px;
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 16px;
-    padding-right: 30px;
-}
-
-/* Estilos para vertical-line */
-.vertical-line {
-    width: 1px;
-    height: 22px;
-    background-color: rgba(51, 51, 51, 0.2);
-}
-
-/* Estilos para SimbolosFooter */
-.SimbolosFooter {
-    padding-left: 32px;
-    padding-right: 50px;
-}
-
-/* Estilos para WhatsApp */
-.WhatsApp {
-    width: 21px;
-    height: 21px;
-    margin-left: 45px;
-}
-
-/* Estilos para Instagram */
-.Instagram {
-    width: 20px;
-    height: 20px;
-    margin-left: 45px;
-}
-
-/* Estilos para Tiktok */
-.Tiktok {
-    width: 20px;
-    height: 22.42px;
-    margin-left: 45px;
-}
-
-/* Estilos para Email */
-.Email {
-    width: 20px;
-    height: 18.38px;
-    margin-right: 16px;
-}
-
-/* Estilos para Gmail */
-.Gmail {
-    padding-top: 4px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 16px;
-}
-
-/* Estilos para LogoRedonda */
-.LogoRedonda {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 55px;
-}
-
-/* Estilos gerais para main */
-main {
-    background-color: #000000;
-    width: 100%;
-    height: 100%;
-}
-
-.body_purchase {
-    display: flex;
-}
     margin-top: 46px;
     margin-left: 50px;
 }
@@ -517,11 +57,6 @@ main {
     width: 47px;
     height: 47px;
     margin-top: 55px;
-}
-
-.Carousel {
-    width: 100%;
-    height: 200px;
 }
 
 .onda {
@@ -616,9 +151,449 @@ footer {
 
 /* AQUI PODE ALTERAR O "height" DO MAIN PARA COMPORTAR O CONTEUDO DA PÁGINA
    429px é só o tamanho da tela no navegador FireFox, e 456px é o do Chrome 
-  (lembrando que isso é pra tela do computador, não sei se muda no de vocês) */
+  (lembrando que isso é pra tela do computador, não sei se muda no de vocês) 570 + 130*/
 main {
     background-color: #F7F6EF;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 570px;   /* 620px ALTERAR O TAMANHO DO MAIN AQUI */ /* Começa com 570 e vai aumentando de 130 em 130: 570px para 1 produto, 700 para 2 produtos diferentes, 830 para 3 produtos diferentes...*/
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.paginas {
+    display: flex;
+    justify-content: end;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 25px 99px 43px 0px;
+    gap: 13px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.paginas p {
+    margin: 0;
+}
+
+.setaDireita2 {
+    font-weight: 600;
+    cursor: default;
+}
+
+.pgAtual {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pgAtual:hover {
+    color: #C4C298; 
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+    margin-left: 162px;
+    margin-bottom: 20px;
+}
+
+.Produto-con {
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.Produto-esq {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    transform: translateX(-50%);
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.JanelaProdutos {
+    background-color: white;
+    width: 80%; 
+    min-height: 340px; /* 475 Começa com 340 e vai aumentando de 195 em 195: 340px para 1 produto, 535 para 2 produtos diferentes, 730 para 3 produtos diferentes... */
+    margin-left: 162px;
+    padding: 30px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtoTitulo {
+    color: rgba(80, 80, 80, 0.94);
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.estipularFrete {
+    color: rgba(80, 80, 80, 0.94);
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.product-card {
+    position: relative;
     width: 100%;
-    height: 456px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    height: 145px;
+}
+
+.infos {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 400px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infos p {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+}
+
+.Descricao {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 100px;
+    padding: 0;
+    border: none;
+}
+
+.imgProduto {
+    max-height: 100%;
+    height: 100%;
+    width: 145px;
+    margin: 0; 
+    padding: 0;
+    border : none;
+}
+
+h3 {
+    display: flex;
+    position: absolute;
+    top: -9%;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 0;
+    border: none;
+    text-align: top;
+    width: fit-content;
+    align-self: flex-start;
+    text-align: start;
+}
+
+.QtdNum {
+    display: flex;
+    padding-bottom: 28px;
+    margin: 0; 
+    padding-top: 0;
+    border : none;
+    align-items: center;
+    gap: 5px;
+}
+
+h4 {
+    display: flex;
+    font-size: 21px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.61);
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    text-align: bottom;
+    width: fit-content;
+    height: 100%;
+    flex: 0 0 auto;
+    text-align: middle;
+    margin-right: 40px;
+    align-self: flex-end;
+    padding-top: 9px;
+}
+
+.QtdNum div {
+    padding: 1px 6px 1px 6px;
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    height: fit-content;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+#arrow {
+    padding: 0px 8px 0px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#arrow:hover {
+    color: #FFFFFF;
+    background-color: #777777;
+}
+
+.horizontal-line-container {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: none;
+}
+
+.horizontal-line {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.33);
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#hl2 {
+    width: 100%;
+}
+
+.continuar {
+    position: relative;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-decoration-line: underline;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.continuar:hover {
+    color: #C4C298;
+}
+
+
+.Produto-dir {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    left: 75%;
+    transform: translateX(-50%);
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.JanelaFinalizar {
+    background-color: white;
+    width: 80%;
+    height: 400px;
+    margin-left: 30px;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.adentro {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.CEP-control {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#CEP {
+    width: 70%;
+}
+
+.Calcular {
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 0;
+    border: none;
+    margin: 0;
+}
+
+.Calcular button {
+    width: 100%;
+    margin: 0;
+    border: 2px solid rgba(43, 43, 43, 0.85);
+    color: rgba(0, 0, 0, 0.85);
+    background-color: #FFFFFF;
+    padding: 12px 0px 12px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.Calcular button:hover {
+    background-color: #555555;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(43, 43, 43, 0.30);
+}
+
+.Total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    width: 100%; /* Garante que a div ocupe toda a largura disponível */
+    color: rgba(0, 0, 0, 0.65);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+
+#FreteMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    width: 100%; /* Garante que a div ocupe toda a largura disponível */
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 0px;
+    padding-top: 0;
+    border: none;
+    margin: 0;
+}
+
+#Frete h5 {
+    margin: 0; /* Remove as margens padrão dos h5 */
+    color: rgba(0, 0, 0, 0.65);
+    padding-bottom: 0;
+    padding-top: 0;
+    border: none;
+}
+
+.Total h5 {
+    margin: 0; /* Remove as margens padrão dos h5 */
+    color: rgba(0, 0, 0, 0.75);
+}
+
+#Num {
+    margin-left: auto; /* Garante que o elemento fique no canto direito */
+}
+
+.Finalizar {
+    width: 100%;
+    padding: 27px 0px 27px 0px;
+    color: white;
+    background-color: rgba(196, 194, 152, 1);
+    text-align: center;
+    justify-content: middle;
+    align-items: middle;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+
+}
+
+.Finalizar:hover {
+    background-color: #666666;
+}
+
+input {
+    border: 2px solid #BDBDBD;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    font-size: 18px;
+}
+
+input:focus {
+    border-color: #111111; /* Substitua pelo código de cor desejado */
+    outline: none; /* Remove o outline padrão do navegador */
+}
+
+.Vazio {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#CarrinhoCarrinho {
+    width: 150px;
+    height:150px;
+    margin-top: 30px;
+}
+
+#MensagemCarrinho {
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(85, 85, 85, 0.85);
+}
+
+.disabled {
+    background-color: rgba(119, 119, 119, 0.8);
+    color: rgba(255, 255, 255, 0.99);
+    pointer-events: none;
+}
+
+.disabled:hover {
+    background-color: rgba(119, 119, 119, 0.8);
 }
